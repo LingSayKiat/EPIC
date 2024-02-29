@@ -1,0 +1,79 @@
+.rates-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.rates-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rates-buttons button {
+  background-color: #007bff; /* Blue background */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.rates-buttons button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.rates-buttons button:focus {
+  outline: none; /* Removes the outline to keep the design clean */
+  box-shadow: none;
+}
+
+.rate-level {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.rate-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rate-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+  background-color: #fff; /* Card background color */
+  width: 175px; /* Minimum width to accommodate longer text */
+  min-height: 150px; /* Adjust height as needed */
+  margin: 10px; /* Space around the card */
+}
+
+.rate-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.sign-up-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-up-btn:hover {
+  background-color: #0056b3;
+}

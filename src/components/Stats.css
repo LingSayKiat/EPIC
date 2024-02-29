@@ -1,0 +1,58 @@
+/* Stats.css */
+.stats-section {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.testimonial-slide {
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonial-image {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px; /* Optional: if you want rounded corners */
+}
+
+.custom-arrow {
+  z-index: 1;
+  cursor: pointer;
+}
+
+.custom-arrow i {
+  color: #007bff;
+  font-size: 30px;
+}
+
+.next-arrow-stats {
+  position: absolute;
+  top: 50%;
+  right: -40px; /* Adjust as needed */
+  transform: translateY(-50%);
+}
+
+.prev-arrow-stats {
+  position: absolute;
+  top: 50%;
+  left: -50px; /* Adjust as needed */
+  transform: translateY(-50%);
+}
+
+/* Responsive settings */
+@media (max-width: 768px) {
+  .testimonial-slide {
+    padding: 10px;
+  }
+
+  .custom-arrow i {
+    font-size: 20px; /* Smaller arrows on mobile */
+  }
+
+  .next-arrow,
+  .prev-arrow {
+    right: 10px; /* Adjust right position for mobile */
+    left: 10px; /* Adjust left position for mobile */
+  }
+}

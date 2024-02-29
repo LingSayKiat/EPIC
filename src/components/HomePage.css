@@ -1,0 +1,55 @@
+.homepage {
+  /* Style your homepage container */
+}
+
+.hero-section {
+  /* Style your hero section with a background image or slider */
+}
+
+.quick-links .quick-link {
+  /* Style your quick link buttons */
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  /* ... */
+}
+
+.about-brief {
+  /* Style your about brief section */
+  margin: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+}
+
+.about-brief button {
+  /* Style your 'Learn More' button */
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.highlights {
+  /* Style your highlights/features section */
+  margin: 20px;
+  padding: 20px;
+}
+
+.highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.highlights li {
+  /* Style your feature list items */
+  margin-bottom: 10px;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+}

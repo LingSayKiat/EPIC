@@ -1,0 +1,72 @@
+.testimonials-section {
+  text-align: center;
+  padding: 50px 0; /* add padding as needed */
+}
+
+.testimonial-member {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.testimonial-member-image {
+  max-width: 300px; /* Adjust size accordingly */
+  border-radius: 50%; /* Circular images for testimonials */
+  margin-bottom: 20px; /* gives some space between image and text */
+}
+
+.testimonial-member-info {
+  text-align: center; /* Center align the testimonial text */
+  max-width: 600px; /* Maximum width of the text container */
+  margin: auto; /* Center the container */
+}
+
+/* Style for testimonial text */
+.testimonial-member-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.testimonial-member-info p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555; /* Adjust the color as needed */
+}
+
+/* Arrows Style */
+.custom-arrow {
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px; /* Adjust size as needed */
+  color: #824a4a; /* Arrow color */
+}
+
+.custom-arrow i {
+  font-size: 24px; /* Adjust size as needed */
+  color: #9d2b2b; /* Arrow color */
+}
+
+.next-arrow-testimonial {
+  right: 50px; /* Adjust the position as needed */
+}
+
+.prev-arrow-testimonial {
+  left: 50px; /* Adjust the position as needed */
+}
+
+/* Dots Style for slick slider */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #000; /* Color of the dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #d35400; /* Color of the active dot */
+}
+
+/* Adjust the autoplaySpeed property in Testimonials.js if you want faster or slower autoscroll */

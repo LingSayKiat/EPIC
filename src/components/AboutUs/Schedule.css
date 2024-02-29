@@ -1,0 +1,76 @@
+/* Schedule.css */
+
+.timetable-container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px; /* Adjust based on the maximum width you prefer */
+  overflow-x: auto; /* Enables horizontal scrolling for smaller screens */
+}
+
+.timetable-header {
+  text-align: center;
+  color: #333; /* Dark text for readability */
+  margin: 20px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* This will center the buttons in the container */
+  margin-bottom: 20px; /* Add some space below the buttons */
+  gap: 50px;
+}
+
+.button-container button {
+  background-color: #007bff; /* A blue shade for the buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* A darker blue on hover */
+}
+
+button:focus,
+button:active {
+  background-color: darkblue;
+}
+
+.timetable {
+  width: 100%;
+  border-collapse: collapse; /* Remove gaps between cells */
+  margin-top: 20px;
+}
+
+.timetable th,
+.timetable td {
+  border: 1px solid #ddd; /* Light gray border for each cell */
+  padding: 8px;
+  text-align: center;
+}
+
+.timetable th {
+  background-color: #f2f2f2; /* Light gray background for headers */
+  color: #333;
+}
+
+/* Style for rows that represent the absence of lessons */
+.no-lesson {
+  background-color: #e9ecef; /* A lighter grey to indicate no lesson */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .timetable-container {
+    width: 100%;
+  }
+
+  .timetable th,
+  .timetable td {
+    padding: 6px; /* Smaller padding for smaller screens */
+  }
+}

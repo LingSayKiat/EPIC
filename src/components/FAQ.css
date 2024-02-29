@@ -1,0 +1,55 @@
+/* FAQ.css */
+
+/* General page styles */
+.faq-page {
+  max-width: 625px; /* Adjust width as needed */
+  margin: 0 auto; /* Center the faq-page on the screen */
+  padding: 20px;
+}
+
+/* Page title styles */
+.faq-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  /* Add more styles if needed */
+}
+
+/* FAQ item styles */
+.faq-item {
+  background-color: #f9f9f9; /* Light grey background */
+  margin-bottom: 10px; /* Spacing between items */
+  border: 1px solid #ddd; /* Border for each item */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* FAQ question styles */
+.faq-question {
+  padding: 15px;
+  background-color: #007bff; /* Bootstrap primary color for example */
+  color: white;
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+  border-radius: 4px 4px 0 0; /* Rounded corners on top */
+  display: flex;
+  justify-content: left;
+}
+
+/* FAQ answer styles */
+.faq-answer {
+  padding: 15px;
+  margin: 0; /* Remove default margins */
+  border-top: 1px solid #ddd; /* Line between question and answer */
+}
+
+/* Icon or indicator for opening/closing the answer */
+.faq-question::before {
+  content: "+";
+  margin-right: 10px;
+  font-size: 1.5em;
+  line-height: 0.8;
+}
+
+/* Change icon when the answer is open */
+.faq-item.open .faq-question::before {
+  content: "-";
+}

@@ -1,0 +1,74 @@
+.contact-us-section {
+  flex: 1 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.contact-header {
+  width: 100%; /* This ensures the header is full width */
+  text-align: center;
+  margin-bottom: 20px; /* Spacing below the header */
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px; /* Adjust the gap between the columns as needed */
+}
+
+.contact-info {
+  max-width: 400px; /* Adjust this to fit your content size */
+  margin: auto; /* Centers the content in the flex container */
+  text-align: center;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  gap: 10px; /* Adjust the gap between icons as needed */
+}
+
+.social-media-icons i {
+  font-size: 35px; /* Adjust the size as needed */
+  margin: 10px; /* Spacing between icons */
+}
+
+.qr-code {
+  width: 100px; /* Adjust as needed */
+  height: auto; /* Keep aspect ratio */
+  display: block;
+}
+
+.maps-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between the maps as desired */
+}
+
+.maps-container iframe {
+  width: 100%; /* You may specify a max-width here if necessary */
+  height: 300px; /* Adjust the height to match your reference */
+}
+
+/* For responsiveness */
+@media (max-width: 768px) {
+  .contact-info,
+  .maps-container {
+    flex-basis: 100%; /* Each section will take full width on smaller screens */
+    flex-direction: column; /* Stack the maps on top of each other */
+    align-items: center; /* Align the stacked items in the center */
+  }
+
+  .maps-container iframe {
+    width: 80%; /* Adjust the width as needed for smaller screens */
+    height: auto; /* Adjust the height to maintain aspect ratio */
+    margin-bottom: 20px; /* Add some space between stacked maps */
+  }
+}
