@@ -19,6 +19,7 @@
   margin: 0 10px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  font-family: "CalibreRegular", sans-serif;
 }
 
 .rates-buttons button:hover {
@@ -63,17 +64,17 @@
   color: #333;
 }
 
-.sign-up-btn {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin-top: 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.rate-card-bonus {
+  padding: 0;
+  margin: 10px 0;
+  list-style: none; /* Removes default list styling */
 }
 
-.sign-up-btn:hover {
-  background-color: #0056b3;
+.rate-card-bonus li {
+  background-color: #f9f9f9; /* Light grey background */
+  padding: 10px 15px;
+  margin-bottom: 10px; /* Space between items */
+  border-left: 4px solid #007bff; /* Highlight line on the left */
+  position: relative;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
 }

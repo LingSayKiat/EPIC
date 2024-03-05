@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "CalibreRegular";
+  src: url("fonts/CalibreRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CalibreMedium";
+  src: url("fonts/CalibreMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CalibreBold";
+  src: url("fonts/CalibreBold.otf") format("opentype");
+}
+
+/* Now you can use these fonts throughout your app */
+body {
+  font-family: "CalibreRegular", sans-serif;
+}
+
+h1 {
+  font-family: "CalibreBold", sans-serif;
+  /* Additional styling for h1 */
+}
+
+/* and so on... */

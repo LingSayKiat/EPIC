@@ -1,58 +1,72 @@
-/* Stats.css */
 .stats-section {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-}
-
-.testimonial-slide {
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
+  background-color: #f9f9f9;
 }
 
-.testimonial-image {
-  max-width: 150px;
-  height: auto;
-  border-radius: 8px; /* Optional: if you want rounded corners */
+/* Charts */
+
+.stats-title {
+  text-align: center;
+  color: #333;
+  font-size: 1em;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.custom-arrow {
-  z-index: 1;
-  cursor: pointer;
+.charts-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.custom-arrow i {
-  color: #007bff;
-  font-size: 30px;
+/* Widgets Part */
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
-.next-arrow-stats {
-  position: absolute;
-  top: 50%;
-  right: -40px; /* Adjust as needed */
-  transform: translateY(-50%);
+.stat-item {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  min-width: 250px; /* Minimum width for each stat card */
+  margin: 1rem;
 }
 
-.prev-arrow-stats {
-  position: absolute;
-  top: 50%;
-  left: -50px; /* Adjust as needed */
-  transform: translateY(-50%);
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #e67e22; /* Orange color for the numbers */
 }
 
-/* Responsive settings */
+.stat-label {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.fa-user-graduate,
+.fa-school,
+.fa-star {
+  margin-bottom: 1rem;
+  color: #3498db; /* Blue color for the icons */
+}
+
 @media (max-width: 768px) {
-  .testimonial-slide {
-    padding: 10px;
+  .charts-container {
+    flex-direction: column;
+    align-items: stretch; /* Stretch charts to full width on small screens */
   }
 
-  .custom-arrow i {
-    font-size: 20px; /* Smaller arrows on mobile */
-  }
-
-  .next-arrow,
-  .prev-arrow {
-    right: 10px; /* Adjust right position for mobile */
-    left: 10px; /* Adjust left position for mobile */
+  .stats-grid {
+    flex-direction: column;
+    align-items: center;
   }
 }

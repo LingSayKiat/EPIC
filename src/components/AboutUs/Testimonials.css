@@ -1,38 +1,130 @@
-.testimonials-section {
+.testimonials-section h2 {
   text-align: center;
-  padding: 50px 0; /* add padding as needed */
 }
 
-.testimonial-member {
+/* General Slider */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  margin-bottom: 200px;
+}
+
+/* Slick Track */
+
+.slick-track {
   display: flex;
-  flex-direction: column; /* Stack image and text vertically */
-  justify-content: center;
   align-items: center;
+}
+
+/* Slick Dots */
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.75); /* Visible color for dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000; /* Color for active dot */
+}
+
+/* Screenshot Slider */
+
+.testimonial-screen-shot-container {
+  max-width: 1050px; /* Adjust based on your layout */
+  margin: auto;
   padding: 20px;
 }
 
+.testimonial-screen-shot-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: if you want rounded corners */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+  padding: 5px;
+}
+
+.testimonial-screen-shot-slide {
+  cursor: pointer;
+}
+
+.testimonial-screen-shot-slide:hover .testimonial-screen-shot-image {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+.testimonial-screen-shot-slide,
+.testimonial-screen-shot-slide img {
+  box-sizing: border-box; /* Ensures padding and borders are included in the width/height */
+}
+
+/* Carousel of text testimonials*/
+.testimonial-member {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1050px;
+}
+
 .testimonial-member-image {
-  max-width: 300px; /* Adjust size accordingly */
-  border-radius: 50%; /* Circular images for testimonials */
-  margin-bottom: 20px; /* gives some space between image and text */
+  width: 200px; /* Larger image for carousel */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevents the image from shrinking */
 }
 
 .testimonial-member-info {
-  text-align: center; /* Center align the testimonial text */
-  max-width: 600px; /* Maximum width of the text container */
-  margin: auto; /* Center the container */
+  flex-grow: 1;
+  text-align: left;
 }
 
-/* Style for testimonial text */
-.testimonial-member-info h3 {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
+.testimonial-member-name {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.testimonial-member-info p {
-  font-size: 1em;
-  line-height: 1.5;
-  color: #555; /* Adjust the color as needed */
+.testimonial-member-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  word-break: break-all;
+}
+
+/* Carousel of video testimonials*/
+
+.video-testimonial-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.video-testimonial-slide {
+  position: relative;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.video-testimonial-slide:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-video {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
 }
 
 /* Arrows Style */
@@ -42,8 +134,11 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 24px; /* Adjust size as needed */
   color: #824a4a; /* Arrow color */
+  background-color: blue;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 
 .custom-arrow i {
@@ -51,22 +146,41 @@
   color: #9d2b2b; /* Arrow color */
 }
 
-.next-arrow-testimonial {
-  right: 50px; /* Adjust the position as needed */
+.custom-arrow:hover {
+  background-color: blue; /* Example hover background color */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.prev-arrow-testimonial {
-  left: 50px; /* Adjust the position as needed */
+.custom-arrow.next-arrow-screenshots,
+.custom-arrow.next-arrow-video,
+.custom-arrow.next-arrow-text {
+  right: 25px; /* Adjust as necessary */
 }
 
-/* Dots Style for slick slider */
-.slick-dots li button:before {
-  font-size: 12px;
-  color: #000; /* Color of the dots */
+.custom-arrow.prev-arrow-screenshots,
+.custom-arrow.prev-arrow-video,
+.custom-arrow.prev-arrow-text {
+  left: 25px; /* Adjust as necessary */
 }
 
-.slick-dots li.slick-active button:before {
-  color: #d35400; /* Color of the active dot */
+.next-arrow-screenshots {
+  right: -200px; /* Adjust based on the layout for screenshot section */
 }
 
-/* Adjust the autoplaySpeed property in Testimonials.js if you want faster or slower autoscroll */
+.prev-arrow-screenshots {
+  left: -200px; /* Adjust based on the layout for screenshot section */
+}
+
+/* You might want to adjust the size of the videos on smaller screens */
+@media (max-width: 768px) {
+  .testimonial-video {
+    width: 100%; /* Make video full width on smaller screens */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .custom-arrow.next-arrow-screenshots,
+  .custom-arrow.prev-arrow-screenshots {
+    right: 10px; /* Decrease for smaller screens */
+    left: 10px; /* Decrease for smaller screens */
+  }
+}

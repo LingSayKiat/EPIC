@@ -63,6 +63,10 @@ button:active {
   background-color: #e9ecef; /* A lighter grey to indicate no lesson */
 }
 
+.new-class {
+  background-color: #007bff;
+}
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .timetable-container {

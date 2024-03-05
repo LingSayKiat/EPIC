@@ -2,13 +2,12 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
-import Stats from "./components/Stats";
-import About from "./components/AboutUs/AboutUs";
-import TuitionRates from "./components/AboutUs/TuitionRates";
-import { Schedule } from "./components/AboutUs/Schedule";
-import Testimonials from "./components/AboutUs/Testimonials";
+import { Stats } from "./components/Stats";
+import TuitionRates from "./components/OurPrograms/TuitionRates";
+import Schedule from "./components/OurPrograms/Schedule";
+import { Testimonials } from "./components/AboutUs/Testimonials";
 import OurTeam from "./components/AboutUs/OurTeam";
-import OurPrograms from "./components/OurPrograms";
+
 import { FAQPage } from "./components/FAQ";
 import ContactUs from "./components/ContactUs";
 import "./App.css";
@@ -21,12 +20,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/Stats" element={<Stats />} />
-          <Route path="/AboutUs" element={<About />} />
-          <Route path="/AboutUs/TuitionRates" element={<TuitionRates />} />
-          <Route path="/AboutUs/Schedule" element={<Schedule />} />
+          <Route path="/OurPrograms/TuitionRates" element={<TuitionRates />} />
+          <Route path="/OurPrograms/Schedule" element={<Schedule />} />
           <Route path="/AboutUs/Testimonials" element={<Testimonials />} />
           <Route path="/AboutUs/OurTeam" element={<OurTeam />} />
-          <Route path="/OurPrograms" element={<OurPrograms />} />
           <Route path="/FAQ" element={<FAQPage />} />
           <Route path="/ContactUs" element={<ContactUs />} />
         </Routes>

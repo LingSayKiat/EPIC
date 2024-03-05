@@ -1,5 +1,4 @@
-import React, { useRef } from "react";
-import Slider from "react-slick";
+import React from "react";
 import "./OurTeam.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,15 +23,11 @@ function FeaturedMembers({ featuredMembers }) {
   );
 }
 
-function TeacherList({ teamMembers, onTeacherClick }) {
+function TeacherList({ teamMembers }) {
   return (
     <div className="teacher-list">
       {teamMembers.map((member, index) => (
-        <div
-          key={index}
-          className="teacher-item"
-          onClick={() => onTeacherClick(index)}
-        >
+        <div key={index} className="teacher-item">
           <img
             src={member.imageUrl}
             alt={member.name}
@@ -46,70 +41,25 @@ function TeacherList({ teamMembers, onTeacherClick }) {
   );
 }
 
-function TeamMember({ member }) {
+function SuccessStoriesList({ successStories }) {
   return (
-    <div className="team-member">
-      <img
-        src={member.imageUrl}
-        alt={member.name}
-        className="team-member-image"
-      />
-      <div className="team-member-info">
-        <h3>{member.name}</h3>
-        <p>{member.description}</p>
-      </div>
+    <div className="success-stories-container">
+      {successStories.map((member, index) => (
+        <div key={index} className="sucess-stories-item">
+          <img
+            src={member.imageUrl}
+            alt={member.name}
+            className="success-stories-image"
+          />
+          <div className="success-stories-name">{member.name}</div>
+          <div className="success-stories-title">{member.title}</div>
+        </div>
+      ))}
     </div>
   );
 }
 
 function OurTeam() {
-  const sliderRef = useRef();
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 15000,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-  };
-
-  function NextArrow(props) {
-    const { style, onClick } = props;
-    return (
-      <div
-        className="custom-arrow next-arrow"
-        style={{ ...style, display: "block" }}
-        onClick={onClick}
-      >
-        <i className="fas fa-chevron-right"></i>{" "}
-        {/* Add font-awesome icon for arrow */}
-      </div>
-    );
-  }
-
-  function PrevArrow(props) {
-    const { style, onClick } = props;
-    return (
-      <div
-        className="custom-arrow prev-arrow"
-        style={{ ...style, display: "block" }}
-        onClick={onClick}
-      >
-        <i className="fas fa-chevron-left"></i>{" "}
-        {/* Add font-awesome icon for arrow */}
-      </div>
-    );
-  }
-
-  // Function to navigate to the slide that corresponds to the clicked teacher
-  const goToSlide = (index) => {
-    sliderRef.current.slickGoTo(index);
-  };
-
   return (
     <div className="our-team-section">
       <div className="our-team-section-header-1">
@@ -117,57 +67,61 @@ function OurTeam() {
       </div>
       <FeaturedMembers featuredMembers={featuredMembers} />
       <div className="our-team-section-header-2">
-        <h2>Meet Our Team</h2>
+        <h2>Meet The Rest Of Our Team</h2>
       </div>
-      <TeacherList teamMembers={teamMembers} onTeacherClick={goToSlide} />
+      <TeacherList teamMembers={teamMembers} />
       <div className="our-team-section-header-3">
-        <h3>Learn More About Our Team</h3>
+        <h3>Our Success Stories</h3>
       </div>
-      <Slider ref={sliderRef} {...settings}>
-        {teamMembers.map((member, index) => (
-          <div key={index}>
-            <TeamMember member={member} />
-          </div>
-        ))}
-      </Slider>
+      <SuccessStoriesList successStories={successStories} />
     </div>
   );
 }
 
-// OurTeam Data
-const teamMembers = [
-  {
-    name: "Kelvin Lim",
-    description:
-      "Proud father of two boys. Armed with a degree in Computer Engineering in NTU. Nearly 20 years of experience as a tutor.",
-    imageUrl: "/images/kelvin-lim.jpg",
-    title: "Principal",
-  },
-  {
-    name: "Kenneth Lim",
-    description:
-      "Founder and creator of online Mathematics learning portal Shoheuken.com, Kenneth is always pioneering new ideas.",
-    imageUrl: "/images/kenneth-lim.jpg",
-    title: "Lead Teacher",
-  },
-  {
-    name: "Anne",
-    description:
-      "Post-Graduate Diploma in Education with NIE. Ex-MOE Secondary School Teacher. More than 15 years of tutoring experience under her belt. Post-Graduate Diploma in Education with NIE. Ex-MOE Secondary School Teacher. More than 15 years of tutoring experience under her belt. Post-Graduate Diploma in Education with NIE. Ex-MOE Secondary School Teacher. More than 15 years of tutoring experience under her belt.",
-    imageUrl: "/images/kelvin-lim.jpg",
-    title: "Lead Teacher",
-  },
-
-  // ... more team members
-];
-
 const featuredMembers = [
   {
     name: "Kelvin Lim",
-    description:
-      "Proud father of two boys. Armed with a degree in Computer Engineering in NTU. Nearly 20 years of experience as a tutor.",
-    imageUrl: "/images/kelvin-lim.jpg",
-    title: "Principal",
+    imageUrl: "/images/OurTeam/kelvin-lim.jpg",
+    title: "Principal and Secondary School Curriculum Head",
+  },
+  {
+    name: "Kenneth Lim",
+    imageUrl: "/images/OurTeam/kenneth-lim.jpg",
+    title: "Primary School Curriculum Head",
+  },
+];
+
+const teamMembers = [
+  {
+    name: "Anne Low",
+    imageUrl: "/images/OurTeam/anne-low.jpg",
+  },
+  {
+    name: "Peter Fong",
+    imageUrl: "/images/OurTeam/kelvin-lim.jpg",
+  },
+  {
+    name: "Yong Rui Xing",
+    imageUrl: "/images/OurTeam/kelvin-lim.jpg",
+  },
+];
+
+const successStories = [
+  {
+    name: "Steven Seah",
+    imageUrl: "/images/OurTeam/steven-seah.jpg",
+  },
+  {
+    name: "Ling Say Kiat",
+    imageUrl: "/images/OurTeam/ling-say-kiat.jpg",
+  },
+  {
+    name: "Tan Yi Long",
+    imageUrl: "/images/OurTeam/tan-yi-long.jpg",
+  },
+  {
+    name: "Teoh Chee Hong",
+    imageUrl: "/images/OurTeam/teoh-chee-hong.jpg",
   },
 ];
 

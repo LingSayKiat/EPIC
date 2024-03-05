@@ -25,22 +25,17 @@ function ContactUs() {
           </div>
           <div className="social-media">
             <div className="social-media-icons">
-              <a
-                href="https://www.facebook.com/epicmindsg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-facebook-f"></i>
+              <a href="https://www.facebook.com/epicmindsg">
+                <i className="fa-brands fa-facebook"></i>
               </a>
-              <a
-                href="https://www.instagram.com/epicmindsg/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-instagram"></i>
+              <a href="https://www.instagram.com/epicmindsg/">
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com/@epicmindsg">
+                <i className="fa-brands fa-tiktok"></i>
               </a>
               <img
-                src="/images/whatsapp-qr-code.webp"
+                src="/images/ContactUs/whatsapp-qr-code.webp"
                 alt="QR Code"
                 className="qr-code"
               />

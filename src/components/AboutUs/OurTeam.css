@@ -4,11 +4,22 @@
   background: #f9f9f9; /* Light background for the team section */
 }
 
+/* Section headers */
+
+.our-team-section-header-1,
+.our-team-section-header-2,
+.our-team-section-header-3 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 /* Featured Members */
 .featured-members-container {
   display: flex;
   justify-content: center; /* Center the featured members */
-  gap: 50px; /* Space between featured members if there's more than one */
+  gap: 30px; /* Space between featured members if there's more than one */
   margin-bottom: 40px; /* Space between this section and the next */
 }
 
@@ -32,23 +43,14 @@
 
 .featured-member-info {
   text-align: center; /* Center the text below the image */
+  max-width: 150px; /* Adjust as needed */
+  white-space: normal; /* Ensures text wraps */
 }
 
 .featured-member-info h3 {
   text-align: center; /* Center the text below the image */
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-/* Section headers */
-
-.our-team-section-header-1,
-.our-team-section-header-2,
-.our-team-section-header-3 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 /* Teacher list */
@@ -80,67 +82,33 @@
   font-weight: bold;
 }
 
-/* Carousel of detailed teacher info */
-.team-member {
+/* Success Stories */
+.success-stories-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* This will center the items horizontally */
+  gap: 50px;
+  margin-bottom: 40px; /* Space between the teacher list and the slider */
+}
+
+.success-stories-item {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin: 20px auto;
-  max-width: 900px;
 }
 
-.team-member-image {
-  width: 200px; /* Larger image for carousel */
-  height: 200px;
-  border-radius: 50%;
+.success-stories-image {
+  width: 150px; /* Or your desired size */
+  height: 150px; /* Or your desired size */
+  border-radius: 50%; /* Circular images */
   object-fit: cover;
+  margin-bottom: 8px;
 }
 
-.team-member-info {
-  flex-grow: 1;
-  text-align: left;
-}
-
-.team-member-info h3 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.team-member-info p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #666;
-  word-wrap: break-word;
-}
-
-/* Custom Arrow Styles */
-.custom-arrow {
-  z-index: 1;
-  cursor: pointer;
-}
-
-.custom-arrow i {
-  color: #007bff;
-  font-size: 30px;
-}
-
-.next-arrow {
-  position: absolute;
-  top: 50%;
-  right: 35px;
-  transform: translateY(-50%);
-}
-
-.prev-arrow {
-  position: absolute;
-  top: 50%;
-  left: 35px;
-  transform: translateY(-50%);
+.success-stories-name {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 /* Add more media queries for responsiveness */

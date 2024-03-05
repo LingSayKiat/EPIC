@@ -21,7 +21,6 @@ function Schedule() {
 
   // Function to render the schedule times, separating them with line breaks
   function renderScheduleTimes(timesArray) {
-    // If timesArray is not provided or not an array, return null or an empty string
     if (!Array.isArray(timesArray)) {
       return null;
     }
@@ -41,9 +40,14 @@ function Schedule() {
 
   // Function to determine if date has lessons, used to add grey spacing in css
   function checkLesson(timesArray) {
-    return timesArray.length === 0 ? "no-lesson" : "";
+    if (timesArray.length === 0) {
+      return "no-lesson";
+    } else if (timesArray.some((time) => time.includes("NEW CLASS!"))) {
+      return "new-class";
+    } else {
+      return "";
+    }
   }
-
   return (
     <div className="timetable-container">
       <div className="timetable-header">
@@ -120,7 +124,7 @@ const toaPayohSchedule = [
     wednesday: ["3.30pm - 5pm", "5pm - 6.30pm", "7pm - 8.30pm"],
     thursday: [],
     friday: [],
-    saturday: ["10am - 11.30am", "11.30am - 1pm"],
+    saturday: ["NEW CLASS!", "10am - 11.30am", "11.30am - 1pm"],
     sunday: ["9.30am - 11am", "11am - 12.30pm", "12.30pm - 2pm"],
   },
   {
@@ -131,7 +135,7 @@ const toaPayohSchedule = [
     wednesday: ["3.30pm - 5pm", "5pm - 6.30pm", "7pm - 8.30pm"],
     thursday: [],
     friday: [],
-    saturday: ["10am - 11.30am", "11.30am - 1pm"],
+    saturday: ["NEW CLASS!", "10am - 11.30am", "11.30am - 1pm"],
     sunday: ["9.30am - 11am", "11am - 12.30pm", "12.30pm - 2pm"],
   },
   {
@@ -240,11 +244,16 @@ const hougangSchedule = [
   {
     level: "Primary",
     subject: "Math",
-    monday: ["5.30pm - 7pm", "7pm - 8.30pm"],
+    monday: ["NEW CLASS!", "5.30pm - 7pm", "7pm - 8.30pm"],
     tuesday: ["3.30pm - 5pm", "5pm - 6.30pm", "6.30pm - 8pm"],
     wednesday: [],
-    thursday: ["5.30pm - 7pm", "7pm - 8.30pm"],
-    friday: ["[OC] 3.30pm - 5pm", "[OC] 5pm - 6.30pm", "[OC] 7pm - 8.30pm"],
+    thursday: ["NEW CLASS!", "5.30pm - 7pm", "7pm - 8.30pm"],
+    friday: [
+      "NEW CLASS!",
+      "[OC] 3.30pm - 5pm",
+      "[OC] 5pm - 6.30pm",
+      "[OC] 7pm - 8.30pm",
+    ],
     saturday: [
       "9.30am - 11am",
       "11am - 12.30pm",
@@ -260,8 +269,13 @@ const hougangSchedule = [
     monday: [],
     tuesday: ["3.30pm - 5pm", "5pm - 6.30pm", "6.30pm - 8pm"],
     wednesday: [],
-    thursday: ["5.30pm - 7pm", "7pm - 8.30pm"],
-    friday: ["[OC] 3.30pm - 5pm", "[OC] 5pm - 6.30pm", "[OC] 7pm - 8.30pm"],
+    thursday: ["NEW CLASS!", "5.30pm - 7pm", "7pm - 8.30pm"],
+    friday: [
+      "NEW CLASS!",
+      "[OC] 3.30pm - 5pm",
+      "[OC] 5pm - 6.30pm",
+      "[OC] 7pm - 8.30pm",
+    ],
     saturday: [
       "9.30am - 11am",
       "11am - 12.30pm",
@@ -285,12 +299,12 @@ const hougangSchedule = [
   {
     level: "Secondary",
     subject: "S1/2 Math",
-    monday: ["5.30pm - 7pm", "7pm - 8.30pm"],
+    monday: ["NEW CLASS!", "5.30pm - 7pm", "7pm - 8.30pm"],
     tuesday: [],
     wednesday: ["5.30pm - 7.30pm", "6.30pm - 8.30pm"],
-    thursday: ["5.30pm - 7pm", "7pm - 8.30pm"],
+    thursday: ["NEW CLASS!", "5.30pm - 7pm", "7pm - 8.30pm"],
     friday: ["3.30pm - 5pm", "5pm - 7pm", "6.30pm - 8.30pm"],
-    saturday: ["10am - 12", "2pm - 4pm", "4pm - 6pm"],
+    saturday: ["NEW CLASS!", "10am - 12", "2pm - 4pm", "4pm - 6pm"],
     sunday: [
       "10am - 12pm",
       "11.30am - 1.30pm",
@@ -301,12 +315,12 @@ const hougangSchedule = [
   {
     level: "Secondary",
     subject: "A/E Math",
-    monday: ["5.30 - 7pm", "7 - 8.30pm"],
+    monday: ["NEW CLASS!", "5.30 - 7pm", "7 - 8.30pm"],
     tuesday: [],
     wednesday: ["5.30pm - 7.30pm", "6.30pm - 8.30pm"],
-    thursday: ["5.30pm - 7pm", "7pm - 8.30pm"],
+    thursday: ["NEW CLASS!", "5.30pm - 7pm", "7pm - 8.30pm"],
     friday: ["3.30pm - 5pm", "5pm - 7pm", "6.30pm - 8.30pm"],
-    saturday: ["10am - 12", "2pm - 4pm", "4pm - 6pm"],
+    saturday: ["NEW CLASS!", "10am - 12", "2pm - 4pm", "4pm - 6pm"],
     sunday: [
       "10am - 12pm",
       "11.30am - 1.30pm",
@@ -429,4 +443,5 @@ const onlineSchedule = [
     sunday: ["11.30am - 1pm"],
   },
 ];
-export { Schedule, toaPayohSchedule, hougangSchedule, onlineSchedule };
+
+export default Schedule;

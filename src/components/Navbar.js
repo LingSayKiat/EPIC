@@ -31,11 +31,14 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            The Epic Mind Learning Loft
+            <img
+              src={"/images/epicmind-logo.jpg"}
+              alt="The Epic Mind Learning Loft Logo"
+            />
           </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
+          <button className="menu-icon" onClick={handleClick}>
+            {click ? <span>&times;</span> : <span>&#9776;</span>}
+          </button>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
@@ -48,53 +51,87 @@ function Navbar() {
               onMouseLeave={onMouseLeave}
             >
               <Link
-                to="/AboutUs"
+                to=""
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (window.innerWidth < 960) {
+                    setDropdown(!dropdown);
+                  } else {
+                    closeMobileMenu();
+                  }
+                }}
               >
                 About Us <i className="fas fa-caret-down" />
               </Link>
               {dropdown && (
                 <div className="dropdown-content">
                   <Link
-                    to="/AboutUs/TuitionRates"
-                    className="dropdown-link"
-                    onClick={closeMobileMenu}
-                  >
-                    Tuition Rates
-                  </Link>
-                  <Link
-                    to="/AboutUs/Schedule"
-                    className="dropdown-link"
-                    onClick={closeMobileMenu}
-                  >
-                    Schedule
-                  </Link>
-                  <Link
                     to="/AboutUs/Testimonials"
                     className="dropdown-link"
-                    onClick={closeMobileMenu}
+                    onClick={() => {
+                      setDropdown(false);
+                      closeMobileMenu();
+                    }}
                   >
                     Testimonials
                   </Link>
                   <Link
                     to="/AboutUs/OurTeam"
                     className="dropdown-link"
-                    onClick={closeMobileMenu}
+                    onClick={() => {
+                      setDropdown(false);
+                      closeMobileMenu();
+                    }}
                   >
                     Our Team
                   </Link>
                 </div>
               )}
             </li>
-            <li className="nav-item">
+            <li
+              className="nav-item"
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
+            >
               <Link
-                to="/OurPrograms"
+                to=""
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (window.innerWidth < 960) {
+                    setDropdown(!dropdown);
+                  } else {
+                    closeMobileMenu();
+                  }
+                }}
               >
-                Our Programs
+                Our Programs <i className="fas fa-caret-down" />
               </Link>
+              {dropdown && (
+                <div className="dropdown-content">
+                  <Link
+                    to="/OurPrograms/TuitionRates"
+                    className="dropdown-link"
+                    onClick={() => {
+                      setDropdown(false);
+                      closeMobileMenu();
+                    }}
+                  >
+                    Tuition Rates
+                  </Link>
+                  <Link
+                    to="/OurPrograms/Schedule"
+                    className="dropdown-link"
+                    onClick={() => {
+                      setDropdown(false);
+                      closeMobileMenu();
+                    }}
+                  >
+                    Schedule
+                  </Link>
+                </div>
+              )}
             </li>
             <li className="nav-item">
               <Link to="/FAQ" className="nav-links" onClick={closeMobileMenu}>
@@ -107,7 +144,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Contact Us
+                Contact
               </Link>
             </li>
           </ul>
