@@ -51,7 +51,7 @@ function Schedule() {
   return (
     <div className="timetable-container">
       <div className="timetable-header">
-        <h2>Schedule</h2>
+        <h2 className="schedule-header">Schedule</h2>
       </div>
       <div className="button-container">
         <button onClick={() => toggleSchedule("Toa Payoh")}>Toa Payoh</button>
@@ -80,7 +80,10 @@ function Schedule() {
             <tr key={index}>
               {/* Check if the level is "Primary" and if it's the first occurrence */}
               {index === 0 || currentSchedule[index - 1].level !== row.level ? (
-                <td rowSpan={calculateRowSpan(currentSchedule, row.level)}>
+                <td
+                  rowSpan={calculateRowSpan(currentSchedule, row.level)}
+                  className="schedule-level"
+                >
                   {row.level}
                 </td>
               ) : null}

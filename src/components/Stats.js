@@ -21,8 +21,8 @@ function Chart({ data, color, title }) {
           cy="50%"
           startAngle={90}
           endAngle={-270}
-          innerRadius={70}
-          outerRadius={80}
+          innerRadius={80}
+          outerRadius={105}
           fill={color}
           paddingAngle={5}
           dataKey="value"
@@ -37,7 +37,7 @@ function Chart({ data, color, title }) {
           dy={8}
           textAnchor="middle"
           fill={color}
-          style={{ fontSize: "20px", fontWeight: "bold" }}
+          style={{ fontSize: "26px", fontWeight: "bold" }}
         >
           {`${data[0].value.toFixed(1)}%`}
         </text>
@@ -47,7 +47,7 @@ function Chart({ data, color, title }) {
           dy={25}
           textAnchor="middle"
           fill="#000"
-          style={{ fontSize: "14px" }}
+          style={{ fontSize: "18px" }}
         >
           {title}
         </text>
@@ -56,10 +56,19 @@ function Chart({ data, color, title }) {
   );
 }
 
+function EpicMethodStatement() {
+  return (
+    <div className="epic-method-statement">
+      Leveraging the EPIC Method™, we make academic excellence achievable and
+      stress-free
+    </div>
+  );
+}
+
 function Widgets() {
   return (
     <div className="stats-section">
-      <h2>Our Impact in Numbers</h2>
+      <h2 className="widgets-title">Our Impact in Numbers</h2>
       <div className="stats-grid">
         {/* Students Taught */}
 
@@ -126,6 +135,7 @@ function Stats() {
         <Chart data={SecondarySchool} color="black" title="O/N Levels" />
         <Chart data={JuniorCollege} color="black" title="A Levels" />
       </div>
+      <EpicMethodStatement />
       <Widgets />
       <TestimonialScreenShots testimonials={testimonialsScreenShots} />
     </>

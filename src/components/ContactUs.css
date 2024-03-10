@@ -9,39 +9,45 @@
 }
 
 .contact-header {
-  width: 100%; /* This ensures the header is full width */
+  width: 100%;
   text-align: center;
-  margin-bottom: 20px; /* Spacing below the header */
+  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .contact-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 50px; /* Adjust the gap between the columns as needed */
+  gap: 50px;
 }
 
 .contact-info {
-  max-width: 400px; /* Adjust this to fit your content size */
-  margin: auto; /* Centers the content in the flex container */
+  max-width: 400px;
+  margin: auto;
   text-align: center;
+  font-size: 1.4rem;
+}
+
+.address {
+  font-size: 1.5rem;
 }
 
 .social-media-icons {
   display: flex;
-  justify-content: center; /* Center the icons horizontally */
-  align-items: center; /* Center the icons vertically */
-  gap: 10px; /* Adjust the gap between icons as needed */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .social-media-icons i {
-  font-size: 35px; /* Adjust the size as needed */
-  margin: 10px; /* Spacing between icons */
+  font-size: 35px;
+  margin: 10px;
 }
 
 .qr-code {
-  width: 100px; /* Adjust as needed */
-  height: auto; /* Keep aspect ratio */
+  width: 100px;
+  height: auto;
   display: block;
 }
 
@@ -49,26 +55,26 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px; /* Adjust the gap between the maps as desired */
+  gap: 20px;
 }
 
 .maps-container iframe {
-  width: 100%; /* You may specify a max-width here if necessary */
-  height: 300px; /* Adjust the height to match your reference */
+  width: 350px;
+  height: 300px;
 }
 
 /* For responsiveness */
 @media (max-width: 768px) {
   .contact-info,
   .maps-container {
-    flex-basis: 100%; /* Each section will take full width on smaller screens */
-    flex-direction: column; /* Stack the maps on top of each other */
-    align-items: center; /* Align the stacked items in the center */
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
   .maps-container iframe {
-    width: 80%; /* Adjust the width as needed for smaller screens */
-    height: auto; /* Adjust the height to maintain aspect ratio */
-    margin-bottom: 20px; /* Add some space between stacked maps */
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
   }
 }

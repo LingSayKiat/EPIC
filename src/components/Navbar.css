@@ -23,7 +23,7 @@ html {
 }
 
 .navbar {
-  background: #cd9898; /* Change to match your branding */
+  background: #ffffff; /* Change to match your branding */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@ html {
 }
 
 .menu-icon {
-  background-color: blue;
+  background-color: #8abcf5;
   border: none;
   font-size: 2rem; /* Adjust size as needed */
   cursor: pointer;
@@ -69,11 +69,17 @@ html {
   padding: 30px; /* Vertical and horizontal padding */
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
 }
 
 .nav-links:hover {
-  background-color: #b4a2a2; /* Slightly darker shade on hover */
-  border-radius: 5px;
+  background-color: #8abcf5;
+  color: #ffffff;
+}
+
+.nav-links.active {
+  background-color: #8abcf5;
+  color: #ffffff;
 }
 
 /* Dropdown Menu */
@@ -83,7 +89,7 @@ html {
   flex-direction: column;
   z-index: 1;
   width: 100%;
-  right: 0;
+  font-size: 1.5rem;
 }
 
 .nav-item:hover .dropdown-content {
@@ -91,13 +97,16 @@ html {
 }
 
 .dropdown-link {
-  background-color: #cab1b1; /* Slightly lighter than the navbar for visibility */
+  background-color: #ffffff;
   text-align: center;
   transition: all 0.3s ease;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .dropdown-link:hover {
-  background-color: #c09e9e;
+  background-color: #8abcf5;
+  color: #ffffff;
 }
 
 /* Mobile styles */
@@ -122,23 +131,23 @@ html {
   .menu-icon:focus,
   .menu-icon:active,
   .menu-icon:hover {
-    background: blue; /* Set the same background color to maintain consistency */
-    outline: none; /* Again, remove focus outline if desired */
+    background: #8abcf5;
+    outline: none;
     display: flex;
     justify-content: center;
   }
 
   .nav-menu {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     width: 100%;
-    height: 90vh; /* Take up most of the screen height */
+    height: 90vh;
     position: absolute;
-    top: 80px; /* Adjust if the navbar height changes */
+    top: 80px;
     left: -100%;
     opacity: 1;
     transition: all 0.3s ease;
-    background: #cd9898; /* Your menu background color */
-    padding: 0; /* Remove padding */
+    background: #ffffff;
+    padding: 0;
   }
 
   .nav-menu.active {

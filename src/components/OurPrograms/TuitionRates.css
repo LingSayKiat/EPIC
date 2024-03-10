@@ -11,29 +11,36 @@
 }
 
 .rates-buttons button {
-  background-color: #007bff; /* Blue background */
-  color: #ffffff; /* White text */
   border: none;
-  border-radius: 5px;
+  outline: none;
   padding: 10px 20px;
-  margin: 0 10px;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  font-family: "CalibreRegular", sans-serif;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #555;
 }
 
 .rates-buttons button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #c8ccd1;
 }
 
 .rates-buttons button:focus {
-  outline: none; /* Removes the outline to keep the design clean */
+  outline: none;
   box-shadow: none;
 }
 
 .rate-level {
   margin-bottom: 30px;
   text-align: center;
+}
+
+.rate-level-text {
+  font-size: 2rem;
 }
 
 .rate-cards-container {
@@ -52,29 +59,35 @@
   border-radius: 8px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
-  background-color: #fff; /* Card background color */
-  width: 175px; /* Minimum width to accommodate longer text */
-  min-height: 150px; /* Adjust height as needed */
-  margin: 10px; /* Space around the card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 175px;
+  min-height: 150px;
+  margin: 20px;
 }
 
-.rate-card h3 {
+.rate-card-subject {
   margin-top: 0;
-  color: #333;
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.rate-card-price {
+  font-size: 1.5rem;
 }
 
 .rate-card-bonus {
   padding: 0;
   margin: 10px 0;
-  list-style: none; /* Removes default list styling */
+  list-style: none;
+  font-size: 1.25rem;
 }
 
 .rate-card-bonus li {
-  background-color: #f9f9f9; /* Light grey background */
+  background-color: #f9f9f9;
   padding: 10px 15px;
-  margin-bottom: 10px; /* Space between items */
-  border-left: 4px solid #007bff; /* Highlight line on the left */
+  margin-bottom: 10px;
+  border-bottom: 2px solid #d4d9de;
   position: relative;
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  transition: all 0.3s ease;
 }

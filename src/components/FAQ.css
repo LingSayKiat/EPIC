@@ -2,46 +2,49 @@
 
 /* General page styles */
 .faq-page {
-  max-width: 625px; /* Adjust width as needed */
-  margin: 0 auto; /* Center the faq-page on the screen */
+  max-width: 725px;
+  margin: 0 auto;
   padding: 20px;
+  padding-bottom: 60px;
 }
 
 /* Page title styles */
 .faq-page h2 {
   text-align: center;
-  margin-bottom: 20px;
-  /* Add more styles if needed */
+  margin-bottom: 60px;
+  font-size: 2.2rem;
 }
 
 /* FAQ item styles */
 .faq-item {
-  background-color: #f9f9f9; /* Light grey background */
-  margin-bottom: 10px; /* Spacing between items */
-  border: 1px solid #ddd; /* Border for each item */
-  border-radius: 4px; /* Rounded corners */
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 /* FAQ question styles */
 .faq-question {
   padding: 15px;
-  background-color: #007bff; /* Bootstrap primary color for example */
+  background-color: #007bff;
   color: white;
   cursor: pointer;
-  user-select: none; /* Prevent text selection */
-  border-radius: 4px 4px 0 0; /* Rounded corners on top */
+  user-select: none;
+  border-radius: 4px 4px 0 0;
   display: flex;
   justify-content: left;
+  font-size: 1.3rem;
 }
 
 /* FAQ answer styles */
 .faq-answer {
   padding: 15px;
-  margin: 0; /* Remove default margins */
-  border-top: 1px solid #ddd; /* Line between question and answer */
+  margin: 0;
+  border-top: 1px solid #ddd;
+  font-size: 1.2rem;
+  line-height: 1.7;
 }
 
-/* Icon or indicator for opening/closing the answer */
 .faq-question::before {
   content: "+";
   margin-right: 10px;
@@ -49,7 +52,6 @@
   line-height: 0.8;
 }
 
-/* Change icon when the answer is open */
 .faq-item.open .faq-question::before {
   content: "-";
 }

@@ -31,15 +31,15 @@ function TuitionRates() {
           rate // Map over filteredRatesData
         ) => (
           <div key={rate.level} className="rate-level">
-            <h2>{rate.level}</h2>
+            <h2 className="rate-level-text">{rate.level}</h2>
             <div className="rate-cards-container">
               {rate.subjects.map(
                 (
                   subject // Map over subjects of each rate
                 ) => (
                   <div key={subject.name} className="rate-card">
-                    <h3>{subject.name}</h3>
-                    <p>${subject.price}/month</p>
+                    <h3 className="rate-card-subject">{subject.name}</h3>
+                    <p className="rate-card-price">${subject.price}/month</p>
                     <ul className="rate-card-bonus">
                       {subject.bonus.map((bonusItem, index) => (
                         <li key={index}>{bonusItem}</li>
@@ -61,7 +61,7 @@ const ratesData = [
     subjects: [
       {
         name: "English",
-        price: 150,
+        price: 240,
         bonus: [
           "Face to Face/Online Consultation",
           "Mathstery",
@@ -71,7 +71,7 @@ const ratesData = [
       },
       {
         name: "Math",
-        price: 150,
+        price: 240,
         bonus: [
           "Face to Face/Online Consultation",
           "Mathstery",
@@ -81,7 +81,7 @@ const ratesData = [
       },
       {
         name: "Science",
-        price: 150,
+        price: 240,
         bonus: [
           "Face to Face/Online Consultation",
           "Mathstery",
@@ -96,7 +96,7 @@ const ratesData = [
     subjects: [
       {
         name: "English",
-        price: 180,
+        price: 340,
         bonus: [
           "Face to Face/Online Consultation",
           "Mathstery",
@@ -106,7 +106,7 @@ const ratesData = [
       },
       {
         name: "S1/2 Math",
-        price: 180,
+        price: 340,
         bonus: [
           "Face to Face/Online Consultation",
           "Mathstery",
@@ -116,7 +116,17 @@ const ratesData = [
       },
       {
         name: "A/E Math",
-        price: 200,
+        price: 360,
+        bonus: [
+          "Face to Face/Online Consultation",
+          "Mathstery",
+          "Personalized Coaching",
+          "Customized Learning Resources",
+        ],
+      },
+      {
+        name: "A and E Math",
+        price: 500,
         bonus: [
           "Face to Face/Online Consultation",
           "Mathstery",
@@ -126,7 +136,7 @@ const ratesData = [
       },
       {
         name: "S1/2 Science",
-        price: 180,
+        price: 340,
         bonus: [
           "Face to Face/Online Consultation",
           "Mathstery",
@@ -136,7 +146,7 @@ const ratesData = [
       },
       {
         name: "Physics/Chemistry",
-        price: 200,
+        price: 360,
         bonus: [
           "Face to Face/Online Consultation",
           "Mathstery",
