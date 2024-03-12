@@ -11,6 +11,7 @@ import OurTeam from "./components/AboutUs/OurTeam";
 import { FAQPage } from "./components/FAQ";
 import ContactUs from "./components/ContactUs";
 import "./App.css";
+import Promotions from "./components/OurPrograms/Promotions";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/OurPrograms" element={<Navigate replace to="/" />} />
           <Route path="/OurPrograms/TuitionRates" element={<TuitionRates />} />
           <Route path="/OurPrograms/Schedule" element={<Schedule />} />
+          <Route path="/OurPrograms/Promotions" element={<Promotions />} />
           <Route path="AboutUs" element={<Navigate replace to="/" />} />
           <Route path="/AboutUs/Testimonials" element={<Testimonials />} />
           <Route path="/AboutUs/OurTeam" element={<OurTeam />} />

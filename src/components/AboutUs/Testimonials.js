@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import Slider from "react-slick";
 import Lightbox from "yet-another-react-lightbox";
 import "slick-carousel/slick/slick.css";
@@ -169,8 +170,20 @@ function TextTestimonials({ testimonials }) {
     ],
   };
 
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div className="text-testimonial-container">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }}
+      transition={{ duration: 1.2 }}
+      variants={variants}
+      className="text-testimonial-container"
+    >
       <Slider {...imageSliderSettings}>
         {testimonials.map((testimonial, index) => (
           <div
@@ -210,7 +223,7 @@ function TextTestimonials({ testimonials }) {
           </p>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }
 
@@ -269,13 +282,24 @@ function VideoTestimonial({ videos }) {
 }
 
 function Testimonials() {
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
-    <div className="testimonials-section">
-      <h2>Our Testimonials</h2>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }}
+      transition={{ duration: 1.2 }}
+      variants={variants}
+      className="testimonials-section"
+    >
+      <h2 className="main-testimonial-header  ">Our Testimonials</h2>
       <TestimonialScreenShots testimonials={testimonialsScreenShots} />
       <TextTestimonials testimonials={testimonialMembers} />
       <VideoTestimonial videos={testimonialMembers} />
-    </div>
+    </motion.div>
   );
 }
 
@@ -298,7 +322,7 @@ const testimonialsScreenShots = [
 const testimonialMembers = [
   {
     name: "Jia Hao",
-    displayname: "Jia Hao, class of 2022",
+    displayname: "Jia Hao, Class of 2022",
     description: "Hello",
     imageUrl: "/images/Testimonials/Text/jiahao.jpg",
     videoUrl: "/Videos",
@@ -306,7 +330,7 @@ const testimonialMembers = [
   },
   {
     name: "Say Kiat",
-    displayname: "Jia Hao, class of 2022",
+    displayname: "Jia Hao, Class of 2022",
     description:
       "TestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTestingTesting",
     imageUrl: "/images/OurTeam/kelvin-lim.jpg",
@@ -315,7 +339,7 @@ const testimonialMembers = [
   },
   {
     name: "Jia Hao",
-    displayname: "Jia Hao, class of 2022",
+    displayname: "Jia Hao, Class of 2022",
     description: "Hello",
     imageUrl: "/images/Testimonials/Text/jiahao.jpg",
     videoUrl: "/Videos",

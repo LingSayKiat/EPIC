@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./OurTeam.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -60,8 +61,20 @@ function SuccessStoriesList({ successStories }) {
 }
 
 function OurTeam() {
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div className="our-team-section">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }}
+      transition={{ duration: 1.2 }}
+      variants={variants}
+      className="our-team-section"
+    >
       <div className="our-team-section-header-1">
         <h2>Our Featured Members</h2>
       </div>
@@ -71,10 +84,10 @@ function OurTeam() {
       </div>
       <TeacherList teamMembers={teamMembers} />
       <div className="our-team-section-header-3">
-        <h3>Our Success Stories</h3>
+        <h2>Our Success Stories</h2>
       </div>
       <SuccessStoriesList successStories={successStories} />
-    </div>
+    </motion.div>
   );
 }
 
@@ -82,7 +95,7 @@ const featuredMembers = [
   {
     name: "Kelvin Lim",
     imageUrl: "/images/OurTeam/kelvin-lim.jpg",
-    title: "Principal and Secondary School Curriculum Head",
+    title: "Principal, Secondary School Curriculum Head",
   },
   {
     name: "Kenneth Lim",

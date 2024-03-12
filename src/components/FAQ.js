@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "./FAQ.css";
 
 function FAQ({ question, answer }) {
@@ -18,15 +19,25 @@ function FAQ({ question, answer }) {
   );
 }
 
-// New wrapper component for the FAQ page
 function FAQPage() {
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
-    <div className="faq-page">
-      <h2>FAQs</h2>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      variants={variants}
+      className="faq-page"
+    >
+      <h1>FAQs</h1>
       {faqData.map((faq, index) => (
         <FAQ key={index} question={faq.question} answer={faq.answer} />
       ))}
-    </div>
+    </motion.div>
   );
 }
 

@@ -9,10 +9,10 @@
 }
 
 /* Page title styles */
-.faq-page h2 {
+.faq-page h1 {
   text-align: center;
   margin-bottom: 60px;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 /* FAQ item styles */

@@ -12,9 +12,7 @@ function HomePage() {
   return (
     <div className="homepage">
       {/* Background Image Section */}
-      <div className="background-image-section">
-        {/* Intentionally left empty if no content is to be overlaid */}
-      </div>
+      <section className="background-image-section"></section>
 
       {/* Mission Vision */}
       <section className="hero-message">
@@ -27,7 +25,7 @@ function HomePage() {
       </section>
 
       {/* Pricing */}
-      <section className="tution-rates">
+      <section className="tuition-rates">
         <TuitionRates />
       </section>
 

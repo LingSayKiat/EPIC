@@ -9,7 +9,6 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  // Functions to handle mouse events
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -18,13 +17,7 @@ function Navbar() {
     }
   };
 
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
+  const onMouseLeave = () => setDropdown(false);
 
   const toggleDropdown = (e) => {
     e.preventDefault();
@@ -51,53 +44,38 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
-                exact
                 to="/"
                 className="nav-links"
-                activeClassName="active"
+                activeclassname="active"
                 onClick={closeMobileMenu}
               >
                 Home
               </NavLink>
             </li>
+            {/* About Us Dropdown */}
             <li
               className="nav-item"
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
             >
-              <a
-                href="/#"
-                className="nav-links"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setDropdown(!dropdown);
-                }}
-              >
+              <a href="#!" className="nav-links" onClick={toggleDropdown}>
                 About Us <i className="fas fa-caret-down" />
               </a>
               {dropdown && (
                 <div className="dropdown-content">
                   <NavLink
-                    exact
                     to="/AboutUs/Testimonials"
                     className="dropdown-link"
-                    activeClassName="active"
-                    onClick={() => {
-                      setDropdown(false);
-                      closeMobileMenu();
-                    }}
+                    activeclassname="active"
+                    onClick={closeMobileMenu}
                   >
                     Testimonials
                   </NavLink>
                   <NavLink
-                    exact
                     to="/AboutUs/OurTeam"
                     className="dropdown-link"
-                    activeClassName="active"
-                    onClick={() => {
-                      setDropdown(false);
-                      closeMobileMenu();
-                    }}
+                    activeclassname="active"
+                    onClick={closeMobileMenu}
                   >
                     Our Team
                   </NavLink>
@@ -109,51 +87,43 @@ function Navbar() {
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
             >
-              <a
-                href="/#"
-                className="nav-links"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setDropdown(!dropdown);
-                }}
-              >
+              <a href="#!" className="nav-links" onClick={toggleDropdown}>
                 Our Programs <i className="fas fa-caret-down" />
               </a>
               {dropdown && (
                 <div className="dropdown-content">
                   <NavLink
-                    exact
                     to="/OurPrograms/TuitionRates"
                     className="dropdown-link"
-                    activeClassName="active"
-                    onClick={() => {
-                      setDropdown(false);
-                      closeMobileMenu();
-                    }}
+                    activeclassname="active"
+                    onClick={closeMobileMenu}
                   >
                     Tuition Rates
                   </NavLink>
                   <NavLink
-                    exact
                     to="/OurPrograms/Schedule"
                     className="dropdown-link"
-                    activeClassName="active"
-                    onClick={() => {
-                      setDropdown(false);
-                      closeMobileMenu();
-                    }}
+                    activeclassname="active"
+                    onClick={closeMobileMenu}
                   >
                     Schedule
+                  </NavLink>
+                  <NavLink
+                    to="/OurPrograms/Promotions"
+                    className="dropdown-link"
+                    activeclassname="active"
+                    onClick={closeMobileMenu}
+                  >
+                    Promotions
                   </NavLink>
                 </div>
               )}
             </li>
             <li className="nav-item">
               <NavLink
-                exact
                 to="/FAQ"
                 className="nav-links"
-                activeClassName="active"
+                activeclassname="active"
                 onClick={closeMobileMenu}
               >
                 FAQ
@@ -161,10 +131,9 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink
-                exact
                 to="/ContactUs"
                 className="nav-links"
-                activeClassName="active"
+                activeclassname="active"
                 onClick={closeMobileMenu}
               >
                 Contact

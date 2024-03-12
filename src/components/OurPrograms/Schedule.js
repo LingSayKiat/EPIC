@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "./Schedule.css";
 
 function Schedule() {
@@ -48,10 +49,23 @@ function Schedule() {
       return "";
     }
   }
+
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div className="timetable-container">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }}
+      transition={{ duration: 1.2 }}
+      variants={variants}
+      className="timetable-container"
+    >
       <div className="timetable-header">
-        <h2 className="schedule-header">Schedule</h2>
+        <h1 className="schedule-header">Schedule</h1>
       </div>
       <div className="button-container">
         <button onClick={() => toggleSchedule("Toa Payoh")}>Toa Payoh</button>
@@ -113,7 +127,7 @@ function Schedule() {
           ))}
         </tbody>
       </table>
-    </div>
+    </motion.div>
   );
 }
 
@@ -251,12 +265,7 @@ const hougangSchedule = [
     tuesday: ["3.30pm - 5pm", "5pm - 6.30pm", "6.30pm - 8pm"],
     wednesday: [],
     thursday: ["NEW CLASS!", "5.30pm - 7pm", "7pm - 8.30pm"],
-    friday: [
-      "NEW CLASS!",
-      "[OC] 3.30pm - 5pm",
-      "[OC] 5pm - 6.30pm",
-      "[OC] 7pm - 8.30pm",
-    ],
+    friday: ["NEW CLASS!", "3.30pm - 5pm", "5pm - 6.30pm", "7pm - 8.30pm"],
     saturday: [
       "9.30am - 11am",
       "11am - 12.30pm",
@@ -273,12 +282,7 @@ const hougangSchedule = [
     tuesday: ["3.30pm - 5pm", "5pm - 6.30pm", "6.30pm - 8pm"],
     wednesday: [],
     thursday: ["NEW CLASS!", "5.30pm - 7pm", "7pm - 8.30pm"],
-    friday: [
-      "NEW CLASS!",
-      "[OC] 3.30pm - 5pm",
-      "[OC] 5pm - 6.30pm",
-      "[OC] 7pm - 8.30pm",
-    ],
+    friday: ["NEW CLASS!", "3.30pm - 5pm", "5pm - 6.30pm", "7pm - 8.30pm"],
     saturday: [
       "9.30am - 11am",
       "11am - 12.30pm",

@@ -1,5 +1,22 @@
+/* Base styles for the body to remove margin and ensure full width */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.hero-message {
+  margin: 0;
+}
+
 .stats {
-  background-color: #ededfe;
+  background-color: #0055b8;
+  color: white;
+}
+
+.tuition-rates {
+  padding-top: 100px;
 }
 
 .schedule {
@@ -10,7 +27,7 @@
   background-image: url(http://localhost:3000/images/OurTeam/kelvin-lim.jpg);
   background-size: cover;
   width: 100%;
-  height: 800px; /* Set the height you desire */
+  height: 1000px; /* Set the height you desire */
 }
 
 /* Responsiveness for the background image */

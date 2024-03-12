@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "./TuitionRates.css";
 
 function TuitionRates() {
@@ -15,8 +16,21 @@ function TuitionRates() {
     selectedLevel === "All" ? true : rate.level === selectedLevel
   );
 
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div className="rates-container">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }}
+      transition={{ duration: 1.2 }}
+      variants={variants}
+      className="rates-container"
+    >
+      <h1 className="rates-header">Tuition Rates</h1>
       <div className="rates-buttons">
         <button onClick={() => selectLevel("Primary School")}>Primary</button>
         <button onClick={() => selectLevel("Secondary School")}>
@@ -52,7 +66,7 @@ function TuitionRates() {
           </div>
         )
       )}
-    </div>
+    </motion.div>
   );
 }
 const ratesData = [

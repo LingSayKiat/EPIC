@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./HeroMessage.css";
 
 function Message() {
@@ -16,22 +17,26 @@ function Message() {
             <h2 className="message-dear-students">
               Dear Students and Parents,{" "}
             </h2>
-            <p>
+            <div>
               <div className="mission-title">Mission</div>
               <br />
-              "Empowerment Through Education: With our EPIC method, we enhance
-              the three R's—Results, Relationships, and Resilience. Our
-              supportive, results-oriented approach is designed to elevate
-              grades, forge lasting connections, and instill resilience,
-              preparing students for a successful future."
-            </p>
-            <p>
+              <div className="mission-description">
+                "Empowerment Through Education: With our EPIC method, we enhance
+                the three R's—Results, Relationships, and Resilience. Our
+                supportive, results-oriented approach is designed to elevate
+                grades, forge lasting connections, and instill resilience,
+                preparing students for a successful future."
+              </div>
+            </div>
+            <div>
               <div className="vision-title">Vision</div>
               <br />
-              "Inspiring Futures, Cultivating Dreams: We aim to nurture a
-              community that not only fosters innovation and personal growth but
-              also paves the way for 10,000 entrepreneurs to thrive."
-            </p>
+              <div className="vision-description">
+                "Inspiring Futures, Cultivating Dreams: We aim to nurture a
+                community that not only fosters innovation and personal growth
+                but also paves the way for 10,000 entrepreneurs to thrive."
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -64,24 +69,35 @@ function Framework() {
           ideas.
         </li>
       </ul>
-      <p className="framework-summary">
+      <div className="framework-summary">
         By harnessing the power of <strong>Effort</strong> to dive deep into{" "}
         <strong>Information</strong>, and channeling it with a clear{" "}
         <strong>Purpose</strong> while bolstered by <strong>Courage</strong>,
         our students don't just learn—they excel. Join us and be part of the
         success story where academic achievement is not just a goal, but a
         reality.
-      </p>
+      </div>
     </div>
   );
 }
 
 function HeroMessage() {
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
-    <>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false }}
+      transition={{ duration: 1.2 }}
+      variants={variants}
+      className="hero-message"
+    >
       <Message />
       <Framework />
-    </>
+    </motion.div>
   );
 }
 

@@ -1,8 +1,12 @@
+.rates-header {
+  font-size: 2.6rem;
+}
+
 .rates-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding-bottom: 200px;
 }
 
 .rates-buttons {
@@ -61,19 +65,26 @@
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  width: 175px;
+  width: 225px;
   min-height: 150px;
   margin: 20px;
 }
 
+.rate-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 .rate-card-subject {
-  margin-top: 0;
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  margin-bottom: 0;
 }
 
 .rate-card-price {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #0055b8;
 }
 
 .rate-card-bonus {
@@ -90,4 +101,15 @@
   border-bottom: 2px solid #d4d9de;
   position: relative;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .rates-buttons {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .rates-buttons button {
+    margin-bottom: 1rem;
+  }
 }

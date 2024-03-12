@@ -3,11 +3,13 @@
   padding: 2rem;
 }
 
+.stats-main-div {
+  padding-bottom: 100px;
+}
 /* Charts */
 
 .stats-title {
   text-align: center;
-  color: #000000;
   font-size: 1.7rem;
   max-width: 80%;
   margin-left: auto;
@@ -27,7 +29,6 @@
 .epic-method-statement {
   text-align: center;
   font-size: 1.7rem;
-  color: #0055b8;
   margin: 2rem auto;
   padding: 0.5rem;
   font-weight: 500;
@@ -38,6 +39,7 @@
 .widgets-title {
   font-size: 2rem;
 }
+
 .stats-grid {
   display: flex;
   justify-content: center;
@@ -46,11 +48,11 @@
 }
 
 .stat-item {
-  background: #ffffff;
+  background: #0055b8;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  min-width: 250px; /* Minimum width for each stat card */
+  min-width: 250px;
   margin: 1rem;
 }
 
@@ -58,12 +60,12 @@
   font-size: 3rem;
   font-weight: bold;
   margin: 0.5rem 0;
-  color: #e67e22; /* Orange color for the numbers */
+  color: #f1ff3f;
 }
 
 .stat-label {
   font-size: 1.5rem;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
@@ -71,13 +73,13 @@
 .fa-school,
 .fa-star {
   margin-bottom: 1rem;
-  color: #3498db; /* Blue color for the icons */
+  color: #66cc99;
 }
 
 @media (max-width: 768px) {
   .charts-container {
     flex-direction: column;
-    align-items: stretch; /* Stretch charts to full width on small screens */
+    align-items: stretch;
   }
 
   .stats-grid {

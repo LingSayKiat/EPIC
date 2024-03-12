@@ -1,8 +1,8 @@
 .contact-us-section {
   flex: 1 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   gap: 20px;
   background-color: rgb(255, 255, 255);
@@ -12,7 +12,21 @@
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.google-form-container {
+  width: 100%;
+  max-width: 700px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.google-form-container iframe {
+  width: 100%;
+  min-width: 300px;
+  height: 520px;
+  border: none;
 }
 
 .contact-content {
@@ -59,6 +73,7 @@
 }
 
 .maps-container iframe {
+  margin-top: 100px;
   width: 350px;
   height: 300px;
 }
@@ -75,6 +90,16 @@
   .maps-container iframe {
     width: 80%;
     height: auto;
-    margin-bottom: 20px;
+    margin: 0;
+  }
+
+  .google-form-container iframe {
+    height: auto;
+  }
+}
+
+@media (min-height: 600px) {
+  .google-form-container iframe {
+    height: 600px;
   }
 }

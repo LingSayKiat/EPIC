@@ -1,11 +1,27 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./ContactUs.css"; // Your CSS file to style the layout
 
 function ContactUs() {
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div className="contact-us-section">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      variants={variants}
+      className="contact-us-section"
+    >
       <div className="contact-header">
-        <h2>Contact Us</h2>
+        <h1>Contact Us</h1>
+      </div>
+      <div className="google-form-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeL1GKlXBARI7Eyaa7DVYoRSjc6k3ouNY0TVB2xcnkII38Gnw/viewform?embedded=true"></iframe>
       </div>
       <div className="contact-content">
         <div className="contact-info">
@@ -58,7 +74,7 @@ function ContactUs() {
           ></iframe>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -2,6 +2,7 @@ import React from "react";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
+import { motion } from "framer-motion";
 import "yet-another-react-lightbox/styles.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -37,7 +38,7 @@ function Chart({ data, color, title }) {
           dy={8}
           textAnchor="middle"
           fill={color}
-          style={{ fontSize: "26px", fontWeight: "bold" }}
+          style={{ fontSize: "30px", fontWeight: "bold" }}
         >
           {`${data[0].value.toFixed(1)}%`}
         </text>
@@ -46,8 +47,8 @@ function Chart({ data, color, title }) {
           y="50%"
           dy={25}
           textAnchor="middle"
-          fill="#000"
-          style={{ fontSize: "18px" }}
+          fill="white"
+          style={{ fontSize: "20px" }}
         >
           {title}
         </text>
@@ -66,6 +67,10 @@ function EpicMethodStatement() {
 }
 
 function Widgets() {
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <div className="stats-section">
       <h2 className="widgets-title">Our Impact in Numbers</h2>
@@ -125,35 +130,49 @@ function Widgets() {
 }
 
 function Stats() {
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <>
-      <div className="stats-title">
-        <h1>Our National Exam Average Distinction Rate since 2016</h1>
-      </div>
-      <div className="charts-container">
-        <Chart data={PrimarySchool} color="black" title="PSLE" />
-        <Chart data={SecondarySchool} color="black" title="O/N Levels" />
-        <Chart data={JuniorCollege} color="black" title="A Levels" />
-      </div>
-      <EpicMethodStatement />
-      <Widgets />
-      <TestimonialScreenShots testimonials={testimonialsScreenShots} />
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+        transition={{ duration: 1.2 }}
+        variants={variants}
+        className="stats-main-div"
+      >
+        <div className="stats-title">
+          <h1>Our National Exam Average Distinction Rate Since 2016</h1>
+        </div>
+        <div className="charts-container">
+          <Chart data={PrimarySchool} color="#F1FF3F" title="PSLE" />
+          <Chart data={SecondarySchool} color="#F1FF3F" title="O/N Levels" />
+          <Chart data={JuniorCollege} color="#F1FF3F" title="A Levels" />
+        </div>
+        <EpicMethodStatement />
+        <Widgets />
+        <TestimonialScreenShots testimonials={testimonialsScreenShots} />
+      </motion.div>
     </>
   );
 }
 
 const PrimarySchool = [
-  { name: "Filled", value: 90.2, fillColor: "#0055B8" }, // Your filled percentage
-  { name: "Unfilled", value: 100 - 90.2, fillColor: "#D3D3D3" }, // The unfilled portion
+  { name: "Filled", value: 90.2, fillColor: "#66CC99" },
+  { name: "Unfilled", value: 100 - 90.2, fillColor: "#D3D3D3" },
 ];
 
 const SecondarySchool = [
-  { name: "Filled", value: 94.8, fillColor: "#0055B8" },
+  { name: "Filled", value: 94.8, fillColor: "#66CC99" },
   { name: "Unfilled", value: 5.2, fillColor: "#D3D3D3" },
 ];
 
 const JuniorCollege = [
-  { name: "Filled", value: 85.5, fillColor: "#0055B8" },
+  { name: "Filled", value: 85.5, fillColor: "#66CC99 " },
   { name: "Unfilled", value: 14.5, fillColor: "#D3D3D3" },
 ];
 

@@ -1,5 +1,10 @@
+.main-testimonial-header {
+  font-size: 2.2rem;
+}
+
 .testimonials-section h2 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* General Slider */
@@ -37,7 +42,6 @@
   margin: auto;
   padding: 20px;
   padding-bottom: 75px;
-  margin-bottom: 100px;
 }
 
 .testimonial-screen-shot-image {
@@ -63,7 +67,7 @@
 /* Carousel of text testimonials*/
 
 .text-testimonial-container {
-  max-width: 1050px;
+  max-width: 1300px;
   margin: auto;
   margin-bottom: 200px;
   padding-top: 200px;
@@ -76,8 +80,8 @@
 }
 
 .text-testimonial-image {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
@@ -87,8 +91,8 @@
 .testimonial-hover-text {
   top: 0;
   left: 0;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   background-color: rgba(140, 106, 106, 0.7); /* Dim the image a bit */
   color: white;
   display: flex;
@@ -103,6 +107,7 @@
 
 .text-testimonial-slide:hover .testimonial-hover-text {
   opacity: 1;
+  font-size: 1.7rem;
 }
 
 .text-testimonial-slide:hover .text-testimonial-image {
@@ -240,7 +245,7 @@
   }
 
   .text-testimonial-description {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     padding: 0 10px;
   }
 }
@@ -259,7 +264,7 @@
 
   /* Adapt the text size for very small screens */
   .text-testimonial-name {
-    font-size: 1rem;
+    font-size: 1.7rem;
   }
 
   .custom-arrow {
@@ -267,6 +272,6 @@
   }
 
   .text-testimonial-description {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 }
