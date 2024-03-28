@@ -6,33 +6,109 @@ html {
   width: 100%;
 }
 
-.hero-message {
-  margin: 0;
+/* Scroll to Top Button */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+  padding: 10px;
+  background-color: #66cc99;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 1.3rem;
+  width: 40px;
+  height: 40px;
 }
+
+.scroll-top-btn:hover,
+.scroll-top-btn:focus {
+  background-color: #93b6a4;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+/* Floating Button */
+
+.floating-sign-up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 35px;
+  background-color: #f8ee8e;
+  color: #000000;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.floating-sign-up-btn:hover,
+.floating-sign-up-btn:focus {
+  background-color: #f8ee8e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Background Image Slider */
+.background-image-slider {
+  padding-bottom: 100px;
+}
+/* Hero Message */
+
+.hero-message {
+  margin-bottom: 50px;
+}
+
+/* Stats */
 
 .stats {
   background-color: #0055b8;
   color: white;
 }
 
+/* Tuition Rates */
+
 .tuition-rates {
   padding-top: 100px;
 }
 
+/* Schedule */
+
 .schedule {
-  background-color: #ededfe;
+  background-color: #0055b8;
 }
 
-.background-image-section {
-  background-image: url(http://localhost:3000/images/OurTeam/kelvin-lim.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 1000px; /* Set the height you desire */
+/* FAQ Page */
+
+.faq-page {
+  padding-bottom: 125px;
 }
 
-/* Responsiveness for the background image */
+/* Google Form */
+.google-form {
+  padding-bottom: 125px;
+}
+
+/* Contact Us */
+.contact-us {
+  background-color: #0055b8;
+}
+
 @media (max-width: 768px) {
-  .background-image-section {
-    height: 300px; /* Smaller height on mobile devices */
+  .floating-sign-up-btn {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 0.8rem;
   }
 }

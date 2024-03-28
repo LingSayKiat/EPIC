@@ -1,0 +1,67 @@
+.pencil-story-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.alumind-header {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.pencil-story-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.pencil-story-introduction {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.pencil-story-main {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+
+.pencil-qualities-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.pencil-quality .icon {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: #0055b8;
+}
+
+.pencil-quality h3 {
+  background-color: #0055b8;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+.pencil-quality p {
+  font-size: 1.35rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pencil-qualities-container {
+    flex-direction: column;
+  }
+
+  .pencil-quality {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .pencil-quality .icon {
+    font-size: 2rem;
+  }
+}

@@ -1,16 +1,12 @@
 /* OurTeam.css */
 .our-team-section {
-  padding: 40px 0;
   background: #f9f9f9;
 }
 
 /* Section headers */
 
-.our-team-section-header-1,
-.our-team-section-header-2,
-.our-team-section-header-3 {
+.our-team-section-header {
   font-size: 1.3rem;
-  color: #333;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -90,6 +86,14 @@
   justify-content: center;
   gap: 50px;
   margin-bottom: 40px;
+}
+
+.our-team-section-description {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .success-stories-item {

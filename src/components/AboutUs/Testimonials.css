@@ -1,5 +1,6 @@
 .main-testimonial-header {
   font-size: 2.2rem;
+  text-align: center;
 }
 
 .testimonials-section h2 {
@@ -28,11 +29,6 @@
 
 .slick-dots li button:before {
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.75); /* Visible color for dots */
-}
-
-.slick-dots li.slick-active button:before {
-  color: #000; /* Color for active dot */
 }
 
 /* Screenshot Slider */
@@ -93,7 +89,7 @@
   left: 0;
   width: 250px;
   height: 250px;
-  background-color: rgba(140, 106, 106, 0.7); /* Dim the image a bit */
+  background-color: #0055b8; /* Dim the image a bit */
   color: white;
   display: flex;
   align-items: center;
@@ -124,18 +120,19 @@
 }
 
 .text-testimonial-name {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #333;
   padding-top: 20px;
 }
 
 .text-testimonial-description {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   color: #666;
-  word-break: break-all;
+  word-break: normal;
   max-width: 1050px;
   margin: auto;
+  text-align: left;
 }
 
 /* Carousel of video testimonials*/
@@ -147,9 +144,7 @@
 }
 
 .video-testimonial-slide {
-  position: relative;
   margin: 20px 0;
-  background-color: #ffffff;
   transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -163,32 +158,35 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px; /* Example size, adjust as needed */
-  height: 40px; /* Same as width to create a circle */
-  font-size: 20px; /* Adjust the size of the icon */
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2; /* Ensure the arrows are above the slider content */
+  z-index: 2;
   cursor: pointer;
-  font-size: 24px; /* Adjust size as needed */
-  color: #9d2b2b; /* Arrow color */
+  font-size: 24px;
 }
 
 .custom-arrow.next-arrow-screenshots {
   right: -85px;
+  color: #f1ff3f;
 }
 
 .custom-arrow.prev-arrow-screenshots {
   left: -25px;
+  color: #f1ff3f;
 }
 
-.next-arrow-text {
-  right: -60px; /* adjust to suit your design */
+.custom-arrow.next-arrow-text {
+  right: -85px;
+  color: black;
 }
 
-.prev-arrow-text {
-  left: -60px; /* adjust to suit your design */
+.custom-arrow.prev-arrow-text {
+  left: -25px;
+  color: black;
 }
 
 .custom-arrow.next-arrow-video {
@@ -206,7 +204,6 @@
     display: none !important;
   }
 
-  /* Adjust padding and margins for smaller screens */
   .text-testimonial-container {
     padding-top: 100px;
     margin-bottom: 100px;
@@ -214,9 +211,9 @@
 
   .text-testimonial-image {
     width: 100%;
-    max-width: 200px; /* or however large you'd like it to be */
-    height: 200px; /* maintain aspect ratio */
-    margin: 0 auto; /* centering if the container is larger than the image */
+    max-width: 200px;
+    height: 200px;
+    margin: 0 auto;
   }
 
   .text-testimonial-slide {
@@ -230,16 +227,13 @@
   }
 
   .text-testimonial-slide:hover .testimonial-hover-text {
-    /* Hide the hover text on smaller devices */
     display: none;
   }
 
-  /* Hide arrows on smaller screens */
   .custom-arrow {
     display: none !important;
   }
 
-  /* Adjust the display of name and description */
   .text-testimonial-name {
     font-size: 1.2rem;
   }
@@ -251,18 +245,19 @@
 }
 
 @media (max-width: 480px) {
-  /* Further adjust the image size for very small screens */
-  .text-testimonial-image {
-    width: 120px;
-    height: 120px;
+  .text-testimonial-slide {
+    pointer-events: none;
   }
 
-  /* Adjust testimonial container for very small screens */
+  .text-testimonial-image {
+    width: 200px;
+    height: 200px;
+  }
+
   .text-testimonial-container {
     padding-top: 50px;
   }
 
-  /* Adapt the text size for very small screens */
   .text-testimonial-name {
     font-size: 1.7rem;
   }
@@ -273,5 +268,9 @@
 
   .text-testimonial-description {
     font-size: 1.2rem;
+  }
+
+  .slick-list {
+    height: 50%;
   }
 }

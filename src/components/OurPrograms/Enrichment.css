@@ -1,0 +1,83 @@
+/* Titles for each section */
+.enrichment-title {
+  font-size: 2.5rem;
+  color: #000000;
+  text-transform: none;
+}
+
+.enrichment-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.enrichment-container section {
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.class-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.class-item {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: calc(50% - 2rem);
+  transition: transform 0.3s ease;
+}
+
+.class-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.class-item h3 {
+  color: #0055b8;
+  font-size: 1.5rem;
+}
+
+.date,
+.age-group {
+  display: block;
+  margin-top: 0.5rem;
+  color: #000000;
+}
+
+.special-discounts {
+  background-color: #ffcc00;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+}
+
+.events-list li {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.events-list li strong {
+  color: #0055b8;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .class-item {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .nav-links {
+    padding: 10px 15px;
+  }
+}

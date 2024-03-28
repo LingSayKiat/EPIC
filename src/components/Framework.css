@@ -1,0 +1,74 @@
+.how-we-do-it-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.how-we-do-it-container h1 {
+  font-size: 2.5rem;
+}
+
+.expectation-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.expectation-item {
+  flex: 0 1 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.expectation-item .icon {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: #0055b8;
+}
+
+.expectation-item:hover .icon {
+  color: #f1ff3f;
+  transition: color 0.3s ease-in-out;
+}
+
+.expectation-item h3 {
+  background-color: #0055b8;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+.expectation-item:hover h3 {
+  background-color: #f1ff3f;
+  color: #000000;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.expectation-item p {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .expectation-container {
+    flex-direction: column;
+  }
+
+  .expectation-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .expectation-item .icon {
+    font-size: 2rem;
+  }
+}

@@ -13,6 +13,9 @@
   src: url("fonts/CalibreBold.otf") format("opentype");
 }
 
+.schedule {
+  background-color: #0055b8;
+}
 /* Now you can use these fonts throughout your app */
 body {
   font-family: "CalibreRegular", sans-serif;
