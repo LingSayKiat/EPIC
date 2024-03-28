@@ -89,6 +89,60 @@ const homepageImages = [
     src: "/images/BackgroundPictures/Homepage/photo1666344596.jpeg",
     alt: "Image",
   },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_0661.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_2668.JPG",
+    alt: "Image",
+  },
+
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_2982.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_4693.JPG",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_4887.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_4890.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_4966.jpg",
+    alt: "Image",
+  },
+
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_4967.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_5117.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_5138.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_5992.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_9203.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/photo_2024-03-10_12-44-42.jpg",
+    alt: "Image",
+  },
 ];
 
 const testimonialsImages = [
@@ -123,69 +177,69 @@ const ourteamImages = [
 
 const alumindImages = [
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4703.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4703.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4304.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4304.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4142.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4142.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4145.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4145.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4147.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4147.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4150.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4150.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4302.jpg",
-    alt: "Image",
-  },
-
-  {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4695.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4302.jpg",
     alt: "Image",
   },
 
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4704.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4695.jpg",
+    alt: "Image",
+  },
+
+  {
+    src: "/images/BackgroundPictures/Alumind/IMG_4704.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4705.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4705.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4706.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4706.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4707.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4707.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4708.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4708.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4709.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4709.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_4711.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_4711.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/OurPrograms/BeyondAcademics/Alumind/IMG_6253.jpg",
+    src: "/images/BackgroundPictures/Alumind/IMG_6253.jpg",
     alt: "Image",
   },
 ];
