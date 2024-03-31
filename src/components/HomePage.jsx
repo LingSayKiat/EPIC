@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Seo from "./Seo";
 import { motion } from "framer-motion";
 import { homepageImages, BackgroundImageSlider } from "./BackgroundImageSlider";
 import { HeroMessage } from "./HeroMessage";
@@ -10,7 +11,6 @@ import { FAQPage } from "./FAQ";
 import { GoogleForm, ContactUs } from "./ContactUs";
 import "./HomePage.css";
 import Framework from "./Framework";
-
 
 function HomePage() {
   const scrollToForm = () => {
@@ -29,12 +29,12 @@ function HomePage() {
   };
 
   const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', checkScrollTop);
-    return () => window.removeEventListener('scroll', checkScrollTop);
+    window.addEventListener("scroll", checkScrollTop);
+    return () => window.removeEventListener("scroll", checkScrollTop);
   }, [showScroll]);
 
   return (
@@ -43,24 +43,23 @@ function HomePage() {
         <BackgroundImageSlider images={homepageImages} />
       </section>
 
-       {/* Scroll to Top Button */}
-       {showScroll &&
+      {/* Scroll to Top Button */}
+      {showScroll && (
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="scroll-top-btn"
           onClick={scrollTop}
           style={{
-            position: 'fixed',
-            bottom: '20px',
-            right: '20px',
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
             zIndex: 1000,
           }}
         >
           ↑
         </motion.button>
-      }
-      
+      )}
 
       {/* Floating Sign Up Button */}
       <motion.button
@@ -71,6 +70,10 @@ function HomePage() {
       >
         Sign Up
       </motion.button>
+
+      <section className="seo">
+        <Seo />
+      </section>
 
       {/* Mission Vision */}
       <section className="hero-message">
@@ -91,7 +94,7 @@ function HomePage() {
       <section className="tuition-rates">
         <Rates />
       </section>
-      
+
       {/* Schedule */}
       <section className="schedule">
         <TimeTable />

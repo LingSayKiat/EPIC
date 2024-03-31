@@ -1,7 +1,7 @@
 /* Background Image Slider */
 
 .background-image-slider {
-  position: relative !;
+  position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -37,23 +37,4 @@
 
 .background-image-slider .slick-track {
   pointer-events: none;
-}
-
-@media screen and (max-width: 960px) {
-  .slick-list {
-    height: 400px;
-  }
-
-  .background-image-slider {
-    height: 400px;
-  }
-
-  .background-image-slider .slick-slide {
-    display: block;
-  }
-
-  .background-image-slider .slick-slide img {
-    height: 100%;
-    object-fit: cover;
-  }
 }

@@ -143,6 +143,26 @@ const homepageImages = [
     src: "/images/BackgroundPictures/Homepage/photo_2024-03-10_12-44-42.jpg",
     alt: "Image",
   },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_2450.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_4154.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_5124.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/IMG_5733.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Homepage/photo_2024-03-10_12-44-44.jpg",
+    alt: "Image",
+  },
 ];
 
 const testimonialsImages = [
@@ -242,28 +262,26 @@ const alumindImages = [
     src: "/images/BackgroundPictures/Alumind/IMG_6253.jpg",
     alt: "Image",
   },
-];
-
-const tuitionratesImages = [
   {
-    src: "/images/BackgroundPictures/Testimonials/IMG_1043.jpg",
-    alt: "Image 2",
+    src: "/images/BackgroundPictures/Alumind/IMG_0494.jpg",
+    alt: "Image",
   },
-];
-
-const scheduleImages = [
-  { src: "/images/BackgroundPictures/Homepage/2021-batch.jpg", alt: "Image 1" },
-];
-const promotionsImages = [
-  { src: "/images/BackgroundPictures/Homepage/2021-batch.jpg", alt: "Image 1" },
-];
-
-const faqImages = [
-  { src: "/images/BackgroundPictures/Homepage/2021-batch.jpg", alt: "Image 1" },
-];
-
-const contactUsImages = [
-  { src: "/images/BackgroundPictures/Homepage/2021-batch.jpg", alt: "Image 1" },
+  {
+    src: "/images/BackgroundPictures/Alumind/IMG_0504.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Alumind/IMG_0516.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Alumind/IMG_0647.jpg",
+    alt: "Image",
+  },
+  {
+    src: "/images/BackgroundPictures/Alumind/IMG_0672.jpg",
+    alt: "Image",
+  },
 ];
 
 export {
@@ -271,10 +289,5 @@ export {
   testimonialsImages,
   ourteamImages,
   alumindImages,
-  tuitionratesImages,
-  scheduleImages,
-  promotionsImages,
-  faqImages,
-  contactUsImages,
   BackgroundImageSlider,
 };

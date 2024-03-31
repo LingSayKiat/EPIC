@@ -167,11 +167,9 @@ function Schedule() {
       viewport={{ once: false }}
       transition={{ duration: 1.2 }}
       variants={variants}
-      className="background-image-slider"
+      className="schedule-container"
     >
-      <div className="schedule-container">
-        <TimeTable />
-      </div>
+      <TimeTable />
     </motion.div>
   );
 }

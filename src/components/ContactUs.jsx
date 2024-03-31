@@ -18,17 +18,16 @@ function GoogleForm() {
     >
       <div className="google-form-container">
         <h1 className="google-form-header">Free Trial SignUp</h1>
-        <iframe 
-        title="Google Form"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeL1GKlXBARI7Eyaa7DVYoRSjc6k3ouNY0TVB2xcnkII38Gnw/viewform?embedded=true">
-        </iframe>
+        <iframe
+          title="Google Form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeL1GKlXBARI7Eyaa7DVYoRSjc6k3ouNY0TVB2xcnkII38Gnw/viewform?embedded=true"
+        ></iframe>
       </div>
     </motion.div>
   );
 }
 
 function ContactUs() {
-
   const variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
@@ -63,7 +62,7 @@ function ContactUs() {
             </p>
           </div>
           <div className="social-media">
-          <h2 className="follow-us-header">Follow us on social media!</h2>
+            <h2 className="follow-us-header">Follow us on social media!</h2>
             <div className="social-media-icons">
               <a href="https://www.facebook.com/epicmindsg">
                 <i className="fa-brands fa-facebook"></i>
@@ -74,7 +73,9 @@ function ContactUs() {
               <a href="https://www.tiktok.com/@epicmindsg">
                 <i className="fa-brands fa-tiktok"></i>
               </a>
-              <i className="fa-brands fa-telegram"></i>
+              <a href="https://t.me/epicmindsgmath">
+                <i className="fa-brands fa-telegram"></i>
+              </a>
               <a
                 href="https://wa.me/+6584444550"
                 target="_blank"

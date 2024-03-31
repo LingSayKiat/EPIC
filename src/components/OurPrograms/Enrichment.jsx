@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 import "./Enrichment.css";
 
 function Enrichment() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const openLightbox = (index) => {
+    setActiveIndex(index);
+    setLightboxOpen(true);
+  };
+
   const variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
@@ -20,27 +30,44 @@ function Enrichment() {
       <section className="holiday-classes">
         <h1 className="enrichment-title">Holiday Classes</h1>
         <div className="class-list">
-          <div className="class-item">
-            <h3>Math Mastery Workshop</h3>
-            <p>
-              Join us this holiday for a math workshop that makes learning fun
-              and engaging!
-            </p>
-            <span className="date">December 15 - December 19</span>
-            <span className="age-group">Ages 12-15</span>
-          </div>
-          <div className="class-item">
-            <h3>Science Exploration Days</h3>
-            <p>
-              Explore the wonders of science with hands-on activities and
-              experiments.
-            </p>
-            <span className="date">November 20 - November 24</span>
-            <span className="age-group">Ages 10-13</span>
-          </div>
+          {classesInfo.map((classItem, index) => (
+            <div
+              key={index}
+              className="class-item"
+              onClick={() => openLightbox(index)}
+            >
+              <img
+                src={classItem.imageUrl}
+                alt={classItem.title}
+                className="class-image"
+              />
+              <h3>{classItem.title}</h3>
+            </div>
+          ))}
         </div>
       </section>
+
+      {lightboxOpen && (
+        <Lightbox
+          open={lightboxOpen}
+          close={() => setLightboxOpen(false)}
+          slides={classesInfo.map((item) => ({ src: item.imageUrl }))}
+          index={activeIndex}
+        />
+      )}
     </motion.div>
   );
 }
+
+const classesInfo = [
+  {
+    title: "Math Mastery Workshop",
+    imageUrl: "/images/Enrichment/P6-Math.png",
+  },
+  {
+    title: "Science Exploration Days",
+    imageUrl: "/images/Enrichment/S1-Science-Class.png",
+  },
+];
+
 export default Enrichment;

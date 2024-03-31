@@ -91,12 +91,9 @@ function OurTeam() {
       <div className="our-team-section-header">
         <h2>Our Success Stories</h2>
         <p className="our-team-section-description">
-          These shining stars are not just our pride but the very essence of our
-          teaching philosophy come to life. Each one has traversed the full arc
-          of being a student to becoming a mentor at our centre. They stand as a
-          testament to the nurturing environment we provide, the potential we
-          see and grow in every learner, and our unwavering belief that every
-          student can excel.
+          Our Success Stories showcase the heart of what we do: guiding students
+          to become mentors. This full-circle experience is a testament to our
+          dedication to developing learners who go on to lead and teach others.
         </p>
       </div>
       <SuccessStoriesList successStories={successStories} />
@@ -107,7 +104,7 @@ function OurTeam() {
 const featuredMembers = [
   {
     name: "Kelvin Lim",
-    imageUrl: "/images/OurTeam/kelvin-lim.jpg",
+    imageUrl: "/images/OurTeam/kelvin.jpg",
     title: "Principal, Secondary School Curriculum Head",
   },
   {
@@ -128,7 +125,7 @@ const teamMembers = [
   },
   {
     name: "Yong Rui Xing",
-    imageUrl: "/images/OurTeam/kelvin-lim.jpg",
+    imageUrl: "/images/OurTeam/rui-xing.webp",
   },
 ];
 

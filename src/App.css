@@ -24,3 +24,16 @@ body {
 h1 {
   font-family: "CalibreBold", sans-serif;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
