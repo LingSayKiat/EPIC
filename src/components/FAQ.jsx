@@ -46,12 +46,7 @@ const faqData = [
   {
     question: "What are classes like in The Epic Mind?",
     answer:
-      "Here in The Epic Mind, we apply a customised curriculum method of teaching. We believe that every learner varies in pace and needs, and thus our educators will guide and assign work to each student individually. As such we keep our classes as small as possible, with one tutor to five students at a given time. ",
-  },
-  {
-    question: "Do you do one to one coaching?",
-    answer:
-      "We believe that a classroom environment facilitates better teaching and learning opportunities. While our teachers guide and assign work to students individually, we will sometimes encourage students to work together or guide each other in the process as well. This engages and creates a co-operative environment between students. ",
+      "Here in The Epic Mind, we apply a personalised curriculum method of teaching. We believe that every learner varies in pace and needs, and thus our educators will guide and assign work to each student individually. As such we keep our classes as small as possible, with one tutor to five students at a given time. ",
   },
   {
     question: "Are there any hidden charges or additional discounts?",

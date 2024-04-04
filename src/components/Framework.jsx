@@ -10,7 +10,7 @@ function Framework() {
           <i className="fa-solid fa-book-open icon"></i>
           <h3>Academic</h3>
           <p>
-            Our academic programs are designed to challenge and stimulate
+            Our academic programs are personalised to challenge and stimulate
             students, ensuring they grasp the fundamentals and excel in their
             exams.
           </p>

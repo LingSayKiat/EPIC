@@ -6,7 +6,11 @@ import { HeroMessage } from "./HeroMessage";
 import { Stats } from "./Stats";
 import { Rates } from "./OurPrograms/TuitionRates";
 import { TimeTable } from "./OurPrograms/Schedule";
-import { testimonialMembers, TextTestimonials } from "./AboutUs/Testimonials";
+import {
+  TagembedWidget,
+  testimonialMembers,
+  TextTestimonials,
+} from "./AboutUs/Testimonials";
 import { FAQPage } from "./FAQ";
 import { GoogleForm, ContactUs } from "./ContactUs";
 import "./HomePage.css";
@@ -93,6 +97,11 @@ function HomePage() {
       {/* Pricing */}
       <section className="tuition-rates">
         <Rates />
+      </section>
+
+      {/* Google Reviews */}
+      <section className="google-reviews">
+        <TagembedWidget />
       </section>
 
       {/* Schedule */}

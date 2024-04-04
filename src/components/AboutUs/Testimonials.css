@@ -153,6 +153,19 @@
   height: auto;
 }
 
+/* Google Reviews */
+.tagembed-widget {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
 /* Arrow styling */
 .custom-arrow {
   display: flex;

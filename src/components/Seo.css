@@ -26,23 +26,27 @@
   line-height: 1.5;
 }
 
-.enroll-button {
-  font-size: 1rem;
-  padding: 0.75rem 1.5rem;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 0.25rem;
-  text-transform: uppercase;
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.2s;
+  font-size: 1.5rem;
 }
 
-.enroll-button:hover,
-.enroll-button:focus {
-  background-color: #0056b3;
-  outline: none;
-  text-decoration: none;
+.whatsapp-button i {
+  margin-right: 10px;
+  font-size: 1.9rem;
 }
 
-/* Add your responsive media query if necessary */
+.whatsapp-button:hover,
+.whatsapp-button:focus {
+  background-color: #128c7e;
+  color: white;
+  text-decoration: none;
+}

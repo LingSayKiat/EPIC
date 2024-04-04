@@ -104,13 +104,12 @@ function TextTestimonials({ testimonials }) {
   const currentIndexRef = useRef(0);
 
   useEffect(() => {
-    if (hoveredTestimonial && selectedTestimonial !== hoveredTestimonial) {
+    if (hoveredTestimonial) {
       setSelectedTestimonial(hoveredTestimonial);
     }
-  }, [hoveredTestimonial, selectedTestimonial]);
+  }, [hoveredTestimonial]);
 
-  function handleSlideChange(newIndex) {
-    currentIndexRef.current = newIndex;
+  function handleSlideChange(oldIndex, newIndex) {
     setSelectedTestimonial(testimonials[newIndex]);
   }
 
@@ -158,7 +157,6 @@ function TextTestimonials({ testimonials }) {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          beforeChange: handleSlideChange,
         },
       },
       {
@@ -167,7 +165,6 @@ function TextTestimonials({ testimonials }) {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          beforeChange: handleSlideChange,
         },
       },
     ],
@@ -289,6 +286,22 @@ function VideoTestimonial({ videos }) {
   );
 }
 
+function TagembedWidget() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "//widget.tagembed.com/embed.min.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return <div className="tagembed-widget" data-widget-id="143791"></div>;
+}
+
 function Testimonials() {
   const variants = {
     hidden: { opacity: 0, y: 20 },
@@ -306,6 +319,7 @@ function Testimonials() {
       <h1 className="main-testimonial-header">Our Testimonials</h1>
       <BackgroundImageSlider images={testimonialsImages} />
       <TestimonialScreenShots testimonials={testimonialsScreenShots} />
+      <TagembedWidget />
       <TextTestimonials testimonials={testimonialMembers} />
       <VideoTestimonial videos={testimonialMembers} />
     </motion.div>
@@ -340,7 +354,7 @@ const testimonialMembers = [
   {
     name: "Jia Hao",
     displayname: "Jia Hao, Sec Math, Class of 2025",
-    description: null,
+    description: "Hello",
     imageUrl: "/images/Testimonials/Text/jiahao.jpg",
     videoUrl: "/videos/jiahao.mp4",
   },
@@ -425,4 +439,5 @@ export {
   TextTestimonials,
   testimonialMembers,
   VideoTestimonial,
+  TagembedWidget,
 };

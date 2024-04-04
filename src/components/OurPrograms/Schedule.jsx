@@ -284,7 +284,7 @@ const toaPayohSchedule = [
     thursday: [],
     friday: ["5pm - 8pm"],
     saturday: [],
-    sunday: ["10am - 1pm", "2.30pm - 4.30pm"],
+    sunday: ["10am - 1pm", "2pm - 5pm"],
   },
   {
     level: "Junior College",
@@ -295,7 +295,7 @@ const toaPayohSchedule = [
     thursday: [],
     friday: [],
     saturday: [],
-    sunday: ["2.30pm - 4.30pm"],
+    sunday: ["2pm - 5pm"],
   },
 ];
 

@@ -75,7 +75,7 @@ function Rates() {
                   <div key={subject.name} className="rate-card">
                     <div className="rate-card-content">
                       <h3 className="rate-card-subject">{subject.name}</h3>
-                      <p className="rate-card-price">${subject.price}/month</p>
+                      <p className="rate-card-price">${subject.price}/lesson</p>
                       <ul className="rate-card-bonus">
                         {subject.bonus.map((bonusItem, index) => (
                           <li key={index}>
@@ -110,34 +110,34 @@ const ratesData = [
     subjects: [
       {
         name: "English",
-        price: 240,
+        price: 60,
         bonus: [
-          "Face to Face/Online Consultation",
-          "Mathstery",
+          "1.5h of Face to Face/Online Consultation",
+          "Fixed Teacher",
           "Personalized Coaching",
-          "Customized Learning Resources",
+          "Personalised Learning Resources",
         ],
         imageUrl: "/images/TuitionRates/math.jpg",
       },
       {
         name: "Math",
-        price: 240,
+        price: 60,
         bonus: [
-          "Face to Face/Online Consultation",
-          "Mathstery",
+          "1.5h of Face to Face/Online Consultation",
+          "Fixed Teacher",
           "Personalized Coaching",
-          "Customized Learning Resources",
+          "Personalised Learning Resources",
         ],
         imageUrl: "/images/TuitionRates/math.jpg",
       },
       {
         name: "Science",
-        price: 240,
+        price: 60,
         bonus: [
-          "Face to Face/Online Consultation",
-          "Mathstery",
+          "1.5h of Face to Face/Online Consultation",
+          "Fixed Teacher",
           "Personalized Coaching",
-          "Customized Learning Resources",
+          "Personalised Learning Resources",
         ],
         imageUrl: "/images/TuitionRates/math.jpg",
       },
@@ -148,67 +148,69 @@ const ratesData = [
     subjects: [
       {
         name: "English",
-        price: 340,
+        price: 90,
         bonus: [
-          "Face to Face/Online Consultation",
-          "Mathstery",
+          "2h of Face to Face/Online Consultation",
+          "Fixed Teacher",
           "Personalized Coaching",
-          "Customized Learning Resources",
+          "Personalised Learning Resources",
         ],
         imageUrl: "/images/TuitionRates/math.jpg",
       },
       {
         name: "S1/2 Math",
-        price: 340,
+        price: 90,
         bonus: [
-          "Face to Face/Online Consultation",
-          "Mathstery",
+          "2h of Face to Face/Online Consultation",
+          "Fixed Teacher",
           "Personalized Coaching",
-          "Customized Learning Resources",
+          "Personalised Learning Resources",
         ],
         imageUrl: "/images/TuitionRates/math.jpg",
       },
       {
         name: "A/E Math",
-        price: 360,
+        price: 90,
         bonus: [
-          "Face to Face/Online Consultation",
+          "2h of Face to Face/Online Consultation",
+          "Fixed Teacher",
           "Mathstery",
           "Personalized Coaching",
-          "Customized Learning Resources",
+          "Personalised Learning Resources",
         ],
         imageUrl: "/images/TuitionRates/math.jpg",
       },
       {
         name: "A and E Math",
-        price: 500,
+        price: 125,
         bonus: [
-          "Face to Face/Online Consultation",
+          "3h of Face to Face/Online Consultation",
+          "Fixed Teacher",
           "Mathstery",
           "Personalized Coaching",
-          "Customized Learning Resources",
+          "Personalised Learning Resources",
         ],
         imageUrl: "/images/TuitionRates/math.jpg",
       },
       {
         name: "S1/2 Science",
-        price: 340,
+        price: 90,
         bonus: [
-          "Face to Face/Online Consultation",
-          "Mathstery",
+          "2h of Face to Face/Online Consultation",
+          "Fixed Teacher",
           "Personalized Coaching",
-          "Customized Learning Resources",
+          "Personalised Learning Resources",
         ],
         imageUrl: "/images/TuitionRates/math.jpg",
       },
       {
         name: "Physics/Chemistry",
-        price: 360,
+        price: 90,
         bonus: [
-          "Face to Face/Online Consultation",
-          "Mathstery",
+          "2h of Face to Face/Online Consultation",
+          "Fixed Teacher",
           "Personalized Coaching",
-          "Customized Learning Resources",
+          "Personalised Learning Resources",
         ],
         imageUrl: "/images/TuitionRates/math.jpg",
       },
@@ -219,23 +221,24 @@ const ratesData = [
     subjects: [
       {
         name: "H1/H2 Math",
-        price: 250,
+        price: 120,
         bonus: [
-          "Face to Face/Online Consultation",
+          "3h of Face to Face/Online Consultation",
+          "Fixed Teacher",
           "Mathstery",
           "Personalized Coaching",
-          "Customized Learning Resources",
+          "Personalised Learning Resources",
         ],
         imageUrl: "/images/TuitionRates/math.jpg",
       },
       {
         name: "Physics/Chemistry",
-        price: 250,
+        price: 120,
         bonus: [
-          "Face to Face/Online Consultation",
-          "Mathstery",
+          "3h of Face to Face/Online Consultation",
+          "Fixed Teacher",
           "Personalized Coaching",
-          "Customized Learning Resources",
+          "Personalised Learning Resources",
         ],
         imageUrl: "/images/TuitionRates/math.jpg",
       },

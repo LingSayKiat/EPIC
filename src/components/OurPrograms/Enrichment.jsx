@@ -28,7 +28,7 @@ function Enrichment() {
       className="enrichment-container"
     >
       <section className="holiday-classes">
-        <h1 className="enrichment-title">Holiday Classes</h1>
+        <h1 className="enrichment-title">Enrichment Classes</h1>
         <div className="class-list">
           {classesInfo.map((classItem, index) => (
             <div
