@@ -82,7 +82,7 @@ function ContactUs() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/images/ContactUs/whatsapp-qr-code.webp"
+                  src={`${process.env.PUBLIC_URL}/images/ContactUs/whatsapp-qr-code.webp`}
                   alt="QR Code"
                   className="qr-code"
                 />

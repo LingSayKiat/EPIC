@@ -64,222 +64,383 @@ function BackgroundImageSlider({ images }) {
 }
 
 const homepageImages = [
-  { src: "/images/BackgroundPictures/Homepage/2021-batch.jpg", alt: "Image" },
-  { src: "/images/BackgroundPictures/Homepage/IMG_0477.jpg", alt: "Image" },
-  { src: "/images/BackgroundPictures/Homepage/IMG_2453.jpg", alt: "Image" },
-  { src: "/images/BackgroundPictures/Homepage/IMG_2908.jpg", alt: "Image" },
-  { src: "/images/BackgroundPictures/Homepage/IMG_4065.jpg", alt: "Image" },
-  { src: "/images/BackgroundPictures/Homepage/IMG_4272.jpg", alt: "Image" },
-  { src: "/images/BackgroundPictures/Homepage/IMG_4308.jpg", alt: "Image" },
-  { src: "/images/BackgroundPictures/Homepage/IMG_4714.jpg", alt: "Image" },
-  { src: "/images/BackgroundPictures/Homepage/IMG_4718.jpg", alt: "Image" },
-  { src: "/images/BackgroundPictures/Homepage/IMG_5204.jpg", alt: "Image" },
-  { src: "/images/BackgroundPictures/Homepage/IMG_5450.jpg", alt: "Image" },
-  { src: "/images/BackgroundPictures/Homepage/IMG_6333.jpg", alt: "Image" },
-  { src: "/images/BackgroundPictures/Homepage/IMG_9492.jpg", alt: "Image" },
   {
-    src: "/images/BackgroundPictures/Homepage/photo163774271.jpeg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/2021-batch.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/photo1637742711.jpeg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_0477.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/photo1666344596.jpeg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_2453.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_0661.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_2908.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_2668.JPG",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_4065.jpg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_4272.jpg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_4308.jpg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_4714.jpg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_4718.jpg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_5204.jpg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_5450.jpg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_6333.jpg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_9492.jpg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/photo163774271.jpeg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/photo1637742711.jpeg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/photo1666344596.jpeg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_0661.jpg",
+    alt: "Image",
+  },
+  {
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_2668.JPG",
     alt: "Image",
   },
 
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_2982.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_2982.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_4693.JPG",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_4693.JPG",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_4887.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_4887.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_4890.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_4890.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_4966.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_4966.jpg",
     alt: "Image",
   },
 
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_4967.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_4967.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_5117.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_5117.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_5138.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_5138.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_5992.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_5992.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_9203.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_9203.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/photo_2024-03-10_12-44-42.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/photo_2024-03-10_12-44-42.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_2450.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_2450.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_4154.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_4154.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_5124.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_5124.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/IMG_5733.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/IMG_5733.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Homepage/photo_2024-03-10_12-44-44.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Homepage/photo_2024-03-10_12-44-44.jpg",
     alt: "Image",
   },
 ];
 
 const testimonialsImages = [
   {
-    src: "/images/BackgroundPictures/Testimonials/IMG_0781.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Testimonials/IMG_0781.jpg",
     alt: "Image 2",
   },
   {
-    src: "/images/BackgroundPictures/Testimonials/IMG_1043.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Testimonials/IMG_1043.jpg",
     alt: "Image 2",
   },
   {
-    src: "/images/BackgroundPictures/Testimonials/IMG_2452.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Testimonials/IMG_2452.jpg",
     alt: "Image 2",
   },
   {
-    src: "/images/BackgroundPictures/Testimonials/IMG_3030.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Testimonials/IMG_3030.jpg",
     alt: "Image 2",
   },
   {
-    src: "/images/BackgroundPictures/Testimonials/IMG_4923.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Testimonials/IMG_4923.jpg",
     alt: "Image 2",
   },
 ];
 
 const ourteamImages = [
   {
-    src: "/images/BackgroundPictures/Testimonials/IMG_1043.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Testimonials/IMG_1043.jpg",
     alt: "Image 2",
   },
 ];
 
 const alumindImages = [
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4703.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4703.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4304.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4304.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4142.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4142.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4145.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4145.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4147.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4147.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4150.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4150.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4302.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4302.jpg",
     alt: "Image",
   },
 
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4695.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4695.jpg",
     alt: "Image",
   },
 
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4704.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4704.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4705.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4705.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4706.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4706.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4707.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4707.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4708.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4708.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4709.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4709.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_4711.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_4711.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_6253.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_6253.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_0494.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_0494.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_0504.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_0504.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_0516.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_0516.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_0647.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_0647.jpg",
     alt: "Image",
   },
   {
-    src: "/images/BackgroundPictures/Alumind/IMG_0672.jpg",
+    src:
+      process.env.PUBLIC_URL +
+      "/images/BackgroundPictures/Alumind/IMG_0672.jpg",
     alt: "Image",
   },
 ];

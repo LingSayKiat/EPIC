@@ -9,13 +9,13 @@ function Message() {
       <div className="message-container">
         <div className="content">
           <img
-            src="images/OurTeam/kelvin-lim.jpg"
+            src={`${process.env.PUBLIC_URL}/images/OurTeam/kelvin-lim.jpg`}
             alt="Principal"
             className="image"
           />
           <div className="message-text">
             <h2 className="message-dear-students">
-              Dear Students and Parents,{" "}
+              Dear Students and Parents,
             </h2>
             <div>
               <div className="mission-title">Mission</div>

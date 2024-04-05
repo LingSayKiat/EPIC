@@ -104,12 +104,12 @@ function OurTeam() {
 const featuredMembers = [
   {
     name: "Kelvin Lim",
-    imageUrl: "/images/OurTeam/kelvin.jpg",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/kelvin.jpg",
     title: "Principal, Secondary School Curriculum Head",
   },
   {
     name: "Kenneth Lim",
-    imageUrl: "/images/OurTeam/kenneth-lim.jpg",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/kenneth-lim.jpg",
     title: "Primary School Curriculum Head",
   },
 ];
@@ -117,34 +117,34 @@ const featuredMembers = [
 const teamMembers = [
   {
     name: "Anne Low",
-    imageUrl: "/images/OurTeam/anne-low.jpg",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/anne-low.jpg",
   },
   {
     name: "Peter Fong",
-    imageUrl: "/images/OurTeam/peter-fong.jpg",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/peter-fong.jpg",
   },
   {
     name: "Yong Rui Xing",
-    imageUrl: "/images/OurTeam/rui-xing.webp",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/rui-xing.webp",
   },
 ];
 
 const successStories = [
   {
     name: "Steven Seah",
-    imageUrl: "/images/OurTeam/steven-seah.jpg",
+    imageUrl: process.env.PUBLIC_URL + "images/OurTeam/steven-seah.jpg",
   },
   {
     name: "Ling Say Kiat",
-    imageUrl: "/images/OurTeam/ling-say-kiat.jpg",
+    imageUrl: process.env.PUBLIC_URL + "images/OurTeam/ling-say-kiat.jpg",
   },
   {
     name: "Tan Yi Long",
-    imageUrl: "/images/OurTeam/tan-yi-long.jpg",
+    imageUrl: process.env.PUBLIC_URL + "images/OurTeam/tan-yi-long.jpg",
   },
   {
     name: "Teoh Chee Hong",
-    imageUrl: "/images/OurTeam/teoh-chee-hong.jpg",
+    imageUrl: process.env.PUBLIC_URL + "images/OurTeam/teoh-chee-hong.jpg",
   },
 ];
 

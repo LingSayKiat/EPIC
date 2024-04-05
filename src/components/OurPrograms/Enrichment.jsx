@@ -62,11 +62,12 @@ function Enrichment() {
 const classesInfo = [
   {
     title: "Math Mastery Workshop",
-    imageUrl: "/images/Enrichment/P6-Math.png",
+    imageUrl: process.env.PUBLIC_URL + "/images/Enrichment/P6-Math.png",
   },
   {
     title: "Science Exploration Days",
-    imageUrl: "/images/Enrichment/S1-Science-Class.png",
+    imageUrl:
+      process.env.PUBLIC_URL + "/images/Enrichment/S1-Science-Class.png",
   },
 ];
 
