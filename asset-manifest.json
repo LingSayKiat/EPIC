@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EPIC/static/css/main.a6c718e7.css",
-    "main.js": "/EPIC/static/js/main.fb93acdb.js",
+    "main.js": "/EPIC/static/js/main.a62226bf.js",
     "static/media/CalibreBold.otf": "/EPIC/static/media/CalibreBold.bba4dd93e0dc972eedb6.otf",
     "static/media/CalibreRegular.otf": "/EPIC/static/media/CalibreRegular.84b1f95cc4641415a24e.otf",
     "static/media/CalibreMedium.otf": "/EPIC/static/media/CalibreMedium.284460eeb8ca28df9954.otf",
@@ -11,10 +11,10 @@
     "static/media/slick.woff": "/EPIC/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/EPIC/index.html",
     "main.a6c718e7.css.map": "/EPIC/static/css/main.a6c718e7.css.map",
-    "main.fb93acdb.js.map": "/EPIC/static/js/main.fb93acdb.js.map"
+    "main.a62226bf.js.map": "/EPIC/static/js/main.a62226bf.js.map"
   },
   "entrypoints": [
     "static/css/main.a6c718e7.css",
-    "static/js/main.fb93acdb.js"
+    "static/js/main.a62226bf.js"
   ]
 }
