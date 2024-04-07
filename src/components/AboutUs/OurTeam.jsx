@@ -132,19 +132,19 @@ const teamMembers = [
 const successStories = [
   {
     name: "Steven Seah",
-    imageUrl: process.env.PUBLIC_URL + "images/OurTeam/steven-seah.jpg",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/steven-seah.jpg",
   },
   {
     name: "Ling Say Kiat",
-    imageUrl: process.env.PUBLIC_URL + "images/OurTeam/ling-say-kiat.jpg",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/ling-say-kiat.jpg",
   },
   {
     name: "Tan Yi Long",
-    imageUrl: process.env.PUBLIC_URL + "images/OurTeam/tan-yi-long.jpg",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/tan-yi-long.jpg",
   },
   {
     name: "Teoh Chee Hong",
-    imageUrl: process.env.PUBLIC_URL + "images/OurTeam/teoh-chee-hong.jpg",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/teoh-chee-hong.jpg",
   },
 ];
 

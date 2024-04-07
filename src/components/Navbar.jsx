@@ -44,7 +44,7 @@ function Navbar() {
         <div className="navbar-container">
           <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img
-              src={`${process.env.PUBLIC_URL}/images/epicmind-logo.jpg`}
+              src={`${process.env.PUBLIC_URL}/images/Logo/epicmind-logo-horizontal.jpg`}
               alt="The Epic Mind Learning Loft Logo"
             />
           </NavLink>

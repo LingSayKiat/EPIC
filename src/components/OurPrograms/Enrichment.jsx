@@ -61,13 +61,21 @@ function Enrichment() {
 
 const classesInfo = [
   {
-    title: "Math Mastery Workshop",
+    title: "P6 Math Master",
     imageUrl: process.env.PUBLIC_URL + "/images/Enrichment/P6-Math.png",
   },
   {
-    title: "Science Exploration Days",
+    title: "Secondary 1/2 Kelgebra Masterclass",
+    imageUrl: process.env.PUBLIC_URL + "/images/Enrichment/S1_2-Algebra.png",
+  },
+  {
+    title: "Secondary 1 Science Workshop",
     imageUrl:
       process.env.PUBLIC_URL + "/images/Enrichment/S1-Science-Class.png",
+  },
+  {
+    title: "O-level Math Crash Course",
+    imageUrl: process.env.PUBLIC_URL + "/images/Enrichment/S4-Math-Crash-Course.png",
   },
 ];
 
