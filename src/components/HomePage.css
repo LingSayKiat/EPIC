@@ -43,6 +43,7 @@
   height: 60px;
   text-align: center;
   border: 2px solid rgb(0, 0, 0);
+  font-family: "CalibreRegular", sans-serif;
 }
 
 .floating-sign-up-btn:hover,

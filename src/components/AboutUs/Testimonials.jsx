@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import Lightbox from "yet-another-react-lightbox";
@@ -101,7 +101,6 @@ function TextTestimonials({ testimonials }) {
     testimonials[0]
   );
   const [hoveredTestimonial, setHoveredTestimonial] = useState(null);
-  const currentIndexRef = useRef(0);
 
   useEffect(() => {
     if (hoveredTestimonial) {
