@@ -10,11 +10,11 @@ import { Testimonials } from "./components/AboutUs/Testimonials";
 import OurTeam from "./components/AboutUs/OurTeam";
 import { FAQPage } from "./components/FAQ";
 import { ContactUsPage } from "./components/ContactUs";
-import "./App.css";
 import Enrichment from "./components/OurPrograms/Enrichment";
 import Alumind from "./components/OurPrograms/BeyondAcademics/Alumind";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import "./App.css";
 
 function App() {
   return (

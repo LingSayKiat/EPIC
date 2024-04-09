@@ -1,22 +1,17 @@
 @font-face {
   font-family: "CalibreRegular";
-  src: url("fonts/CalibreRegular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "CalibreMedium";
-  src: url("fonts/CalibreMedium.otf") format("opentype");
+  src: url("/public/fonts/CalibreRegular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "CalibreBold";
-  src: url("fonts/CalibreBold.otf") format("opentype");
+  src: url("/public/fonts/CalibreBold.otf") format("opentype");
 }
 
 .schedule {
   background-color: #0055b8;
 }
-/* Now you can use these fonts throughout your app */
+
 body {
   font-family: "CalibreRegular", sans-serif;
 }

@@ -236,29 +236,3 @@
     height: 600px;
   }
 }
-
-/* For responsiveness */
-@media (max-width: 768px) {
-  .contact-info,
-  .maps-container {
-    flex-basis: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .maps-container iframe {
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-
-  .google-form-container iframe {
-    height: auto;
-  }
-}
-
-@media (min-height: 600px) {
-  .google-form-container iframe {
-    height: 600px;
-  }
-}

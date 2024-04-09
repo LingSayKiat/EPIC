@@ -321,7 +321,7 @@ function Testimonials() {
       <TestimonialScreenShots testimonials={testimonialsScreenShots} />
       <TagembedWidget />
       <TextTestimonials testimonials={testimonialMembers} />
-      <VideoTestimonial videos={testimonialMembers} />
+      <VideoTestimonial videos={testimonialVideos} />
     </motion.div>
   );
 }
@@ -360,7 +360,8 @@ const testimonialMembers = [
   {
     name: "Jia Hao",
     displayname: "Jia Hao, Sec Math, Class of 2025",
-    description: "Hello",
+    description:
+      "Before coming to Epic Mind, I have always struggled with math no matter the topic, no matter what I did or how much effort I put into studying I would somehow always end up behind my class and that was when I started hating the subject as a whole which led to me doubting my ability to pass mathematics for PSLE, which is when my cousin who was an ex-student here, stepped in and introduced me to Epic Mind. I first came in as a Primary 6 student and where I met my first tutor here, Kenneth, who scared me a lot at first when I started coming for his sessions on sundays. He was firm while teaching which really helped with improving my mathematics and I could really see the difference from before and after coming here for lessons. He also had a website where you accumulated points for completing work and you could redeem those points for rewards which encouraged me to work harder to improve my math. As of now as a Secondary 3 student I still attend lessons here but under the watch of Kenneth’s brother, Kelvin who really helped with the transition to secondary school, his ways of teaching are … different but it is as effective or even more effective as it is captivating and fun to go through.Although still I wouldn’t say Mathematics is my favorite subject ,I can say I am doing a lot better than when I started.",
     imageUrl: process.env.PUBLIC_URL + "/images/Testimonials/Text/jiahao.jpg",
     videoUrl: process.env.PUBLIC_URL + "/videos/jiahao.mp4",
   },
@@ -396,6 +397,14 @@ const testimonialMembers = [
       "Maths used to be a big headache for me. I was barely scraping by, with my grades hovering between 40-50%. After joining EpicMind, Math began to make more sense and exams didn’t seem so scary anymore. My grades began to improve to A1 which felt awesome. I’ve gotten really good at Math topics I used to struggle with. Furthermore, my own self confidence has also improved tremendously. I remember Kelvin telling me how doubting myself was like setting myself up for failure, no matter how smart I was. Additionally, paying 10 cents for every mistake I made helped to instil in me the importance of accountability. This whole experience has warped the way I look at Math and also how I see myself for the better.",
     imageUrl:
       process.env.PUBLIC_URL + "/images/Testimonials/Text/bryan-lawi.jpg",
+    videoUrl: null,
+  },
+  {
+    name: "Xin Yu",
+    displayname: "Xin Yu, Sec Math, class of 2025",
+    description:
+      "Maths used to be a big headache for me. I was barely scraping by, with my grades hovering between 40-50%. After joining EpicMind, Math began to make more sense and exams didn’t seem so scary anymore. My grades began to improve to A1 which felt awesome. I’ve gotten really good at Math topics I used to struggle with. Furthermore, my own self confidence has also improved tremendously. I remember Kelvin telling me how doubting myself was like setting myself up for failure, no matter how smart I was. Additionally, paying 10 cents for every mistake I made helped to instil in me the importance of accountability. This whole experience has warped the way I look at Math and also how I see myself for the better.",
+    imageUrl: process.env.PUBLIC_URL + "/images/Testimonials/Text/xin-yu.jpg",
     videoUrl: null,
   },
   {
@@ -438,6 +447,12 @@ const testimonialMembers = [
     imageUrl: process.env.PUBLIC_URL + "/images/Testimonials/Text/nicholas.jpg",
     videoUrl: null,
   },
+];
+
+const testimonialVideos = [
+  { videoUrl: process.env.PUBLIC_URL + "/videos/jiahao.mp4" },
+  { videoUrl: process.env.PUBLIC_URL + "/videos/current-students-yt.mp4" },
+  { videoUrl: process.env.PUBLIC_URL + "/videos/seth-sharing.mp4" },
 ];
 
 export {

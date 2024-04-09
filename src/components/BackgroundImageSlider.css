@@ -2,31 +2,13 @@
 
 .background-image-slider {
   position: relative;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-}
-
-.background-image-slider .slick-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 }
 
 .background-image-slider .slick-slide img {
   width: 100vw;
-  height: 100vh;
-  object-fit: contain;
-}
-
-.background-image-slider .slick-fade .slick-slide {
-  opacity: 0;
-  transition: opacity ease-in-out 0.5s;
-}
-
-.background-image-slider .slick-fade .slick-active {
-  opacity: 1;
+  height: 125vh;
+  object-fit: cover;
 }
 
 .background-image-slider .slick-dots,
@@ -37,4 +19,11 @@
 
 .background-image-slider .slick-track {
   pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .background-image-slider .slick-slide img {
+    object-fit: contain;
+  }
 }

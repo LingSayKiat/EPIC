@@ -1,14 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Gallery.css";
 
 function InstagramWidget() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.curator.io/published/7d95ff30-adc8-491d-a34b-d7e5ef050b7c.js";
+    script.async = true;
+    script.charset = "UTF-8";
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
-    <div className="instagram-widget-container">
-      <iframe
-        title="Instagram Feed"
-        src="//lightwidget.com/widgets/7e5d594581685408b1bf98b3fc39fefe.html"
-        className="instagram-widget"
-      ></iframe>
+    <div id="curator-feed-default-feed-layout">
+      <a
+        href="https://curator.io"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="crt-logo crt-tag"
+      >
+        Powered by Curator.io
+      </a>
     </div>
   );
 }
