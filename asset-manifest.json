@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EPIC/static/css/main.be8222ec.css",
-    "main.js": "/EPIC/static/js/main.952149f6.js",
+    "main.css": "/EPIC/static/css/main.6acf88b2.css",
+    "main.js": "/EPIC/static/js/main.cc6969a4.js",
     "static/media/CalibreBold.otf": "/EPIC/static/media/CalibreBold.bba4dd93e0dc972eedb6.otf",
     "static/media/CalibreRegular.otf": "/EPIC/static/media/CalibreRegular.84b1f95cc4641415a24e.otf",
     "static/media/slick.svg": "/EPIC/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -9,11 +9,11 @@
     "static/media/slick.ttf": "/EPIC/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/EPIC/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/EPIC/index.html",
-    "main.be8222ec.css.map": "/EPIC/static/css/main.be8222ec.css.map",
-    "main.952149f6.js.map": "/EPIC/static/js/main.952149f6.js.map"
+    "main.6acf88b2.css.map": "/EPIC/static/css/main.6acf88b2.css.map",
+    "main.cc6969a4.js.map": "/EPIC/static/js/main.cc6969a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.be8222ec.css",
-    "static/js/main.952149f6.js"
+    "static/css/main.6acf88b2.css",
+    "static/js/main.cc6969a4.js"
   ]
 }
