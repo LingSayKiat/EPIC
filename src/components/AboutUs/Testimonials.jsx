@@ -341,8 +341,8 @@ const testimonialsScreenShots = [
   {
     imageUrl:
       process.env.PUBLIC_URL +
-      "/images/Testimonials/ScreenShots/emtp-rayyan.jpg",
-    altText: "EMTP Rayyan 23S3",
+      "/images/Testimonials/ScreenShots/emtp-zhihui.jpg",
+    altText: "EMHG ZhiHui 24S2",
   },
 ];
 
@@ -419,7 +419,7 @@ const testimonialMembers = [
     displayname: "Keaven, Sec Math, Class of 2022",
     description:
       "When I first arrived at The Epic Mind late in 2021, Math was a bit of a struggle, always finding myself stuck between B4 and C5. But this place is special; it lets you learn at your own beat, pushing hard or taking it easy whenever you need to. It wasn't just about Math; I learned to open up more, embracing new ideas, friends, and even a healthier lifestyle, inspired by the community here. 2022 was an adventure, full of hard graft and practice, but with the encouragement and support from both friends and mentors like Kel, it all felt worth it, especially as I saw my math grades jump to an A2 in my prelims. This journey's been about more than just academics; it's been about growing, finding a tribe, and even sneaking in epic Smash sessions with the crew—Haruki, Tye, and Ethan—before the O levels. As I wait for my final results, I'm grateful for the laughter, the lessons, and the leaps I've made here.",
-    imageUrl: process.env.PUBLIC_URL + "/images/Testimonials/Text/keavan.webp",
+    imageUrl: process.env.PUBLIC_URL + "/images/Testimonials/Text/keavan.jpg",
     videoUrl: null,
   },
   {
