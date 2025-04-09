@@ -1,0 +1,238 @@
+.contact-us-main-container {
+  background: #0055b8;
+}
+
+.contact-us-section {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.contact-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.google-form-header {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.google-form-container {
+  width: 100%;
+  max-width: 700px;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.google-form-container iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 520px;
+  border: none;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.contact-info {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  position: relative;
+}
+
+.address {
+  font-size: 1.5rem;
+}
+
+.outlet-name {
+  color: #66cc99;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media-icons i {
+  font-size: 35px;
+  margin: 10px;
+  color: #f1ff3f;
+}
+
+.qr-code {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.maps-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.maps-container iframe {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+}
+.contact-us-main-container {
+  background: #0055b8;
+}
+
+.contact-us-section {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.contact-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.google-form-header {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.google-form-container {
+  width: 100%;
+  max-width: 700px;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.google-form-container iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 520px;
+  border: none;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.contact-info {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  position: relative;
+}
+
+.address {
+  font-size: 1.5rem;
+}
+
+.outlet-name {
+  color: #66cc99;
+}
+
+.follow-us-header {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #66cc99;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media-icons i {
+  font-size: 35px;
+  margin: 10px;
+  color: #f1ff3f;
+}
+
+.qr-code {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.maps-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.maps-container iframe {
+  margin-top: 100px;
+  width: 350px;
+  height: 300px;
+}
+
+/* For responsiveness */
+@media (max-width: 768px) {
+  .contact-info,
+  .maps-container {
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .maps-container iframe {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .google-form-container iframe {
+    height: auto;
+  }
+
+  .cloud,
+  .cloud-text {
+    display: none;
+  }
+}
+
+@media (min-height: 600px) {
+  .google-form-container iframe {
+    height: 600px;
+  }
+}

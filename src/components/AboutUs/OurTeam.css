@@ -1,0 +1,182 @@
+/* OurTeam.css */
+.our-team-section {
+  background: #f9f9f9;
+}
+
+/* Section headers */
+
+.our-team-section-header {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Featured Members */
+.featured-members-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.featured-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.featured-member-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  border-style: solid;
+  border-color: black;
+}
+
+.featured-member-info {
+  text-align: center;
+  max-width: 200px;
+  white-space: normal;
+  font-size: 1.4rem;
+}
+
+.featured-member-name {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.featured-member-title {
+  text-align: center;
+  font-size: 1.45rem;
+  font-weight: bold;
+}
+
+/* Teacher list */
+.teacher-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.teacher-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teacher-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  border-style: solid;
+  border-color: black;
+}
+
+.teacher-name {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Success Stories */
+.success-stories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.our-team-section-description {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.success-stories-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success-stories-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  border-style: solid;
+  border-color: black;
+}
+
+.success-stories-name {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Add more media queries for responsiveness */
+@media (max-width: 768px) {
+  .featured-member-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .featured-member-info h3 {
+    font-size: 1.9rem;
+  }
+
+  .featured-member-info p {
+    font-size: 1.5rem;
+  }
+
+  .featured-members-container {
+    flex-wrap: wrap;
+  }
+  .our-team-section h2 {
+    font-size: 2rem;
+  }
+
+  .custom-arrow i {
+    font-size: 25px;
+  }
+
+  .teacher-member {
+    flex-direction: column;
+  }
+
+  .teacher-image {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+
+  .teacher-name {
+    font-size: 2rem;
+  }
+
+  .success-stories-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .success-stories-name {
+    font-size: 2rem;
+  }
+
+  .teacher-list {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}

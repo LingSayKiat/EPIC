@@ -1,0 +1,86 @@
+.stats-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Charts */
+
+.stats-title {
+  text-align: center;
+  font-size: 1.7rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+}
+
+.charts-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* EPIC Method */
+
+.epic-method-statement {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+/* Widgets Part */
+
+.widgets-title {
+  font-size: 2rem;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  background: #0055b8;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  min-width: 250px;
+  margin: 1rem;
+}
+
+.stat-value {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #f1ff3f;
+}
+
+.stat-label {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.fa-user-graduate,
+.fa-school,
+.fa-star {
+  margin-bottom: 1rem;
+  color: #66cc99;
+}
+
+@media (max-width: 768px) {
+  .charts-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .stats-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,52 @@
+.seo-title-container {
+  background-color: #0055b8;
+}
+
+.seo-title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.seo-section {
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 0px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seo-description {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.whatsapp-button i {
+  margin-right: 10px;
+  font-size: 1.9rem;
+}
+
+.whatsapp-button:hover,
+.whatsapp-button:focus {
+  background-color: #128c7e;
+  color: white;
+  text-decoration: none;
+}

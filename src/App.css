@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "CalibreRegular";
+  src: url("/public/fonts/CalibreRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CalibreBold";
+  src: url("/public/fonts/CalibreBold.otf") format("opentype");
+}
+
+.schedule {
+  background-color: #0055b8;
+}
+
+body {
+  font-family: "CalibreRegular", sans-serif;
+}
+
+h1 {
+  font-family: "CalibreBold", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}

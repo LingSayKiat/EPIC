@@ -1,0 +1,140 @@
+.hero-message {
+  padding-bottom: 50px;
+}
+
+/* Message */
+
+.message-title {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-size: 2.6rem;
+  margin-top: 50px;
+}
+
+.message-container {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.image {
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.message-text {
+  flex-grow: 1;
+}
+
+.mission-title {
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-decoration: underline;
+}
+
+.vision-title {
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-top: 1.5rem;
+  text-decoration: underline;
+}
+
+.mission-description,
+.vision-description {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* EPIC Framework */
+.framework-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+.framework-title {
+  color: #0055b8;
+  font-size: 2.5rem;
+}
+
+.framework-description {
+  color: #333;
+  font-size: 1.6rem;
+}
+
+.framework-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.framework-list li {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.framework-summary {
+  font-style: italic;
+  color: #444;
+  border-top: 1px solid #ddd; /* Separator line */
+  padding-top: 1rem;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .mission-title {
+    text-align: center;
+    padding: 5px;
+  }
+  .vision-title {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .content {
+    flex-direction: column; /* Stack items on small screens */
+  }
+
+  .image {
+    margin-right: 0;
+    margin-bottom: 20px; /* Space below the image */
+    width: 80%;
+    height: auto;
+  }
+
+  .framework-container {
+    padding: 15px;
+  }
+
+  .framework-description {
+    font-size: 1.6rem;
+  }
+  .framework-summary {
+    font-size: 1.3rem;
+  }
+
+  .message-dear-students {
+    text-align: center;
+  }
+}

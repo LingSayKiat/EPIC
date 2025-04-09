@@ -1,0 +1,54 @@
+/* Scroll to Top Button */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 100px;
+  right: 37.5px;
+  z-index: 1000;
+  padding: 10px;
+  background-color: #66cc99;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 1.3rem;
+  width: 40px;
+  height: 40px;
+}
+
+.scroll-top-btn:hover,
+.scroll-top-btn:focus {
+  background-color: #93b6a4;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Button */
+
+.floating-sign-up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 35px;
+  background-color: #f8ee8e;
+  color: #000000;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  font-family: "CalibreRegular", sans-serif;
+}
+
+.floating-sign-up-btn:hover,
+.floating-sign-up-btn:focus {
+  background-color: #f8ee8e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

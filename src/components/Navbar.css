@@ -1,0 +1,224 @@
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  max-height: 140px;
+  width: auto;
+}
+
+/* Navigation Container */
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  width: 100%;
+}
+
+.menu-icon {
+  background-color: #8abcf5;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  border-radius: 15%;
+}
+
+/* Styling for navigation menu */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding-left: 20%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  line-height: 40px;
+  position: relative;
+}
+
+.nav-links {
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  height: 100%;
+  padding: 0 30px;
+  background-color: white;
+  text-align: center;
+}
+
+.nav-links:hover {
+  background-color: #8abcf5;
+  color: #ffffff;
+}
+
+.nav-links.active {
+  background-color: #8abcf5;
+  color: #ffffff;
+}
+
+.fa-caret-down {
+  padding: 8px;
+  padding-top: 0px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  width: 100%;
+  font-size: 1.5rem;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.dropdown-content .dropdown-content {
+  top: 0;
+  left: 100%;
+  list-style-type: none;
+  display: none;
+}
+
+.dropdown-content .dropdown-content li {
+  display: block;
+}
+
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-link {
+  background-color: #ffffff;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  display: block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Spaces out the text and caret */
+}
+
+.dropdown-link:hover {
+  background-color: #8abcf5;
+  color: #ffffff;
+}
+
+/* Beyond Academics */
+
+.beyond-academics-caret-down {
+  display: none;
+}
+
+.beyond-academics-caret-right {
+  padding: 4px;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 960px) {
+  .navbar-container {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .fa-caret-down {
+    padding-bottom: 18px;
+  }
+
+  .beyond-academics-caret-right {
+    display: none;
+  }
+
+  .beyond-academics-caret-down {
+    display: inline-block;
+  }
+
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-80%, 100%);
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu-icon:focus,
+  .menu-icon:active,
+  .menu-icon:hover {
+    background: #8abcf5;
+    outline: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 140px;
+    opacity: 1;
+    transition: all 0.3s ease;
+    background: #ffffff;
+    padding: 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    left: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+
+  .nav-item {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-links,
+  .nav-links.active {
+    text-align: center;
+    padding: 18px 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    display: border-box;
+  }
+}

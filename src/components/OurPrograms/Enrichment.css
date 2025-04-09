@@ -1,0 +1,158 @@
+/* Titles for each section */
+.enrichment-title {
+  font-size: 2.5rem;
+  color: #000000;
+  text-transform: none;
+  margin-bottom: 2rem;
+}
+
+.enrichment-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.enrichment-container section {
+  margin-bottom: 5.2rem;
+}
+
+/* Slick Slider Styles */
+.enrichment-class-slider {
+  margin-bottom: 3rem;
+}
+
+.slick-slide {
+  padding: 0 10px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.enrichment-class-image {
+  max-width: 100%;
+  max-height: 700px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #0055b8;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #66cc99;
+}
+
+.custom-arrow.next-arrow-enrichment {
+  right: 415px;
+  color: black;
+}
+
+.custom-arrow.prev-arrow-enrichment {
+  left: 450px;
+  color: black;
+}
+
+/* Sign-Up Button for Slider */
+.slider-sign-up-btn {
+  background-color: #66cc99;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.slider-sign-up-btn:hover,
+.slider-sign-up-btn:active {
+  background-color: #93b6a4;
+}
+
+/* Class Item Styles */
+.class-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.class-item {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  max-width: 30%;
+  cursor: pointer;
+}
+
+.class-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.class-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.class-item h3 {
+  color: #0055b8;
+  font-size: 2rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.sign-up-btn {
+  padding: 10px 20px;
+  background-color: #66cc99;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sign-up-btn:hover,
+.sign-up-btn:active {
+  background-color: #93b6a4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .class-list {
+    flex-direction: column;
+  }
+
+  .class-item {
+    max-width: 100%;
+  }
+
+  .class-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .class-item img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .slider-image {
+    max-height: 300px; /* Adjust for smaller screens */
+  }
+}

@@ -1,0 +1,109 @@
+.schedule-header {
+  font-size: 3rem;
+  color: white;
+}
+
+.schedule-container {
+  background-color: #0055b8;
+}
+
+/* Schedule.css */
+
+.timetable-container {
+  width: 100%;
+  margin: auto;
+  max-width: 1500px;
+  overflow-x: auto;
+  padding-bottom: 100px;
+  font-size: 1rem;
+}
+
+.timetable-header {
+  text-align: center;
+  color: #ffffff;
+  margin: 20px 0;
+  font-size: 1.6rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.button-container button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #66cc99;
+}
+
+button:hover {
+  background-color: #66cc99;
+}
+
+button:focus,
+button.active {
+  background-color: #93b6a4;
+}
+
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.timetable th,
+.timetable td {
+  border: 1px solid #d4cccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.timetable th {
+  background-color: #8abcf5;
+}
+
+.schedule-level {
+  background-color: #8abcf5;
+}
+
+.schedule-subject {
+  color: white;
+}
+
+/* Style for rows that represent the absence of lessons */
+.no-lesson {
+  background-color: rgb(224, 222, 222);
+}
+
+.new-class {
+  background-color: #f8ee8e;
+}
+
+.normal-lesson {
+  background-color: #ffffff;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .timetable-container {
+    width: 100%;
+  }
+
+  .timetable th,
+  .timetable td {
+    padding: 6px; /* Smaller padding for smaller screens */
+  }
+}

@@ -1,0 +1,28 @@
+/* Background Image Slider */
+
+.background-image-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image-slider .slick-slide img {
+  width: 97.5vw;
+  height: 95vh;
+  object-fit: cover;
+}
+
+.background-image-slider .slick-dots,
+.background-image-slider .slick-prev,
+.background-image-slider .slick-next {
+  display: none !important;
+}
+
+.background-image-slider .slick-track {
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .background-image-slider .slick-slide img {
+    object-fit: contain;
+  }
+}
