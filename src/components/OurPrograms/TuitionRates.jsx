@@ -182,7 +182,7 @@ const ratesData = [
       },
       {
         name: "A and E Math Combo Package Deal",
-        price: 125,
+        price: 135,
         bonus: [
           "3h of Face to Face/Online Consultation",
           "Fixed Teacher",
