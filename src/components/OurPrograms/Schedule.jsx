@@ -272,7 +272,7 @@ const toaPayohSchedule = [
     wednesday: [],
     thursday: [],
     friday: [],
-    saturday: ["10.30am - 12pm", "12pm - 1.30pm"],
+    saturday: ["NEW CLASS!", "10.30am - 12pm", "12pm - 1.30pm"],
     sunday: [],
   },
   {
@@ -295,7 +295,7 @@ const toaPayohSchedule = [
     thursday: [],
     friday: [],
     saturday: [],
-    sunday: ["2pm - 4.30pm"],
+    sunday: ["2.30pm - 4.30pm"],
   },
 ];
 
