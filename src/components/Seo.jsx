@@ -1,7 +1,15 @@
 import React from "react";
 import "./Seo.css";
+import { motion } from "framer-motion";
 
 function Seo() {
+  const openGoogleForm = () => {
+    window.open(
+      "https://docs.google.com/forms/d/1JxciREcyXzSu4S8wr82cZ5p7R6qsVhX8Ky2N4Xv3Co8/edit",
+      "_blank"
+    );
+  };
+
   return (
     <>
       <div className="seo-title-container">
@@ -26,6 +34,14 @@ function Seo() {
           <i className="fa-brands fa-whatsapp"></i>
           WhatsApp Us
         </a>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="seo-sign-up-btn"
+          onClick={openGoogleForm}
+        >
+          Sign Up
+        </motion.button>
       </div>
     </>
   );
