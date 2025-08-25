@@ -40,7 +40,7 @@ function Seo() {
           className="seo-sign-up-btn"
           onClick={openGoogleForm}
         >
-          Sign Up
+          Ask Us Anything!
         </motion.button>
       </div>
     </>
