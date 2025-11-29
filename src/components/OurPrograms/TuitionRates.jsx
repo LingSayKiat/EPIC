@@ -159,7 +159,7 @@ const ratesData = [
       },
       {
         name: "S1/2 Math",
-        price: 90,
+        price: 100,
         bonus: [
           "2h of Face to Face/Online Consultation",
           "Fixed Teacher",
@@ -170,7 +170,7 @@ const ratesData = [
       },
       {
         name: "A/E Math",
-        price: 90,
+        price: 100,
         bonus: [
           "2h of Face to Face/Online Consultation",
           "Fixed Teacher",
