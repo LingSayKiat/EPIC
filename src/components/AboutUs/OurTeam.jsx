@@ -144,20 +144,28 @@ const teamMembers = [
     imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/peter-fong.jpg",
   },
   {
+    name: "Cheng Yuan Yong, English/Math",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/yuan-yong.jpg",
+  },
+  {
+    name: "Sherlyn Poon, Phonics/Reading",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/sherlyn.jpg",
+  },
+  {
+    name: "Luqe, Math",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/luqe.jpg",
+  },
+  {
     name: "Yong Rui Xing, English",
     imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/rui-xing.webp",
+  },
+  {
+    name: "Ling Say Kiat, CTO",
+    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/ling-say-kiat.jpg",
   },
 ];
 
 const successStories = [
-  {
-    name: "Steven Seah, Math",
-    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/steven-seah.jpg",
-  },
-  {
-    name: "Ling Say Kiat, Math",
-    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/ling-say-kiat.jpg",
-  },
   {
     name: "Tan Yi Long, Physics/Chemistry",
     imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/tan-yi-long.jpg",

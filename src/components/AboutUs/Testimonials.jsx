@@ -344,6 +344,18 @@ const testimonialsScreenShots = [
       "/images/Testimonials/ScreenShots/emtp-zhihui.jpg",
     altText: "EMTP Zhi Hui 23S3",
   },
+  {
+    imageUrl:
+      process.env.PUBLIC_URL +
+      "/images/Testimonials/ScreenShots/emhg-joshua-wong-1.jpg",
+    altText: "EMHG Joshua Wong 26S3",
+  },
+  {
+    imageUrl:
+      process.env.PUBLIC_URL +
+      "/images/Testimonials/ScreenShots/emhg-joshua-wong-2.jpg",
+    altText: "EMHG Joshua Wong 26S3",
+  },
 ];
 
 // Testimonials Data

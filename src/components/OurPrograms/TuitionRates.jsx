@@ -148,7 +148,7 @@ const ratesData = [
     subjects: [
       {
         name: "English",
-        price: 90,
+        price: 100,
         bonus: [
           "2h of Face to Face/Online Consultation",
           "Fixed Teacher",
@@ -194,7 +194,7 @@ const ratesData = [
       },
       {
         name: "S1/2 Science",
-        price: 90,
+        price: 100,
         bonus: [
           "2h of Face to Face/Online Consultation",
           "Fixed Teacher",
@@ -205,7 +205,7 @@ const ratesData = [
       },
       {
         name: "Physics/Chemistry",
-        price: 90,
+        price: 100,
         bonus: [
           "2h of Face to Face/Online Consultation",
           "Fixed Teacher",
