@@ -156,10 +156,6 @@ const teamMembers = [
     imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/luqe.jpg",
   },
   {
-    name: "Yong Rui Xing, English",
-    imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/rui-xing.webp",
-  },
-  {
     name: "Ling Say Kiat, CTO",
     imageUrl: process.env.PUBLIC_URL + "/images/OurTeam/ling-say-kiat.jpg",
   },

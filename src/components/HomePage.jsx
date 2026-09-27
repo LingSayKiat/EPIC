@@ -36,7 +36,7 @@ function HomePage() {
         <Stats />
       </section>
 
-      {/* Framwork */}
+      {/* Framework */}
       <section className="framework">
         <Framework />
       </section>
