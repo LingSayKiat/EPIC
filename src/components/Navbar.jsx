@@ -161,7 +161,7 @@ function Navbar() {
                     activeclassname="active"
                     onClick={closeMobileMenu}
                   >
-                    Holiday and Special Programmes
+                    Enrichment Programmes
                   </NavLink>
                 </ul>
               )}

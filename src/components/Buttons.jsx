@@ -18,10 +18,7 @@ function Buttons({ children }) {
   };
 
   const openGoogleForm = () => {
-    window.open(
-      "https://docs.google.com/forms/d/1JxciREcyXzSu4S8wr82cZ5p7R6qsVhX8Ky2N4Xv3Co8/edit",
-      "_blank"
-    );
+    window.open("https://forms.gle/6cXezBNoJ3VHKWWp9", "_blank");
   };
 
   useEffect(() => {

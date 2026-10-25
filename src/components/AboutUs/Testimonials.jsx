@@ -98,7 +98,7 @@ function TestimonialScreenShots({ testimonials }) {
 
 function TextTestimonials({ testimonials }) {
   const [selectedTestimonial, setSelectedTestimonial] = useState(
-    testimonials[0]
+    testimonials[0],
   );
   const [hoveredTestimonial, setHoveredTestimonial] = useState(null);
 
@@ -212,7 +212,7 @@ function TextTestimonials({ testimonials }) {
                   />
                 )}
               </div>
-            )
+            ),
         )}
       </Slider>
 
@@ -278,7 +278,7 @@ function VideoTestimonial({ videos }) {
                   <source src={video.videoUrl} type="video/mp4" />
                 </video>
               </div>
-            )
+            ),
         )}
       </Slider>
     </div>
@@ -355,6 +355,18 @@ const testimonialsScreenShots = [
       process.env.PUBLIC_URL +
       "/images/Testimonials/ScreenShots/emhg-joshua-wong-2.jpg",
     altText: "EMHG Joshua Wong 26S3",
+  },
+  {
+    imageUrl:
+      process.env.PUBLIC_URL +
+      "/images/Testimonials/ScreenShots/emtp-chun-jia.jpeg",
+    altText: "EMTP Chun Jia 26S3",
+  },
+  {
+    imageUrl:
+      process.env.PUBLIC_URL +
+      "/images/Testimonials/ScreenShots/emtp-valerie-tan.jpeg",
+    altText: "EMTP Valerie Tan 26S3",
   },
 ];
 
